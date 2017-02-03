@@ -80,7 +80,7 @@ class User
         //$query->bindValue(':days', $diff);
         $result = $query->execute();
         if ($result) {
-           // $msg = "<div class='alert alert-success'><strong>Congratulations! </strong>You have been registered successfully.Now Login :)</div>";
+           $msg = "<div class='alert alert-success'><strong>Congratulations! </strong>You have been registered successfully.Now Login :)</div>";
             return $msg;
         } else {
             $msg = "<div class='alert alert-danger'><strong>Sorry! </strong>There is a problem</div>";
@@ -151,7 +151,7 @@ class User
             Session::set("id", $result->id);
             Session::set("name", $result->name);
             Session::set("username", $result->username);
-            Session::set("loginmsg", "<div class='alert alert-success'><strong>Success! </strong>You are logged in</div>");
+           // Session::set("loginmsg", "<div class='alert alert-success'><strong>Success! </strong>You are logged in</div>");
             header("Location: userhome.php");
         } else {
             $msg = "<div class='alert alert-danger'><strong>Error! </strong>Data not found</div>";
