@@ -80,7 +80,7 @@ class User
         //$query->bindValue(':days', $diff);
         $result = $query->execute();
         if ($result) {
-            $msg = "<div class='alert alert-success'><strong>Congratulations! </strong>You have been registered successfully.Now Login :)</div>";
+           // $msg = "<div class='alert alert-success'><strong>Congratulations! </strong>You have been registered successfully.Now Login :)</div>";
             return $msg;
         } else {
             $msg = "<div class='alert alert-danger'><strong>Sorry! </strong>There is a problem</div>";
