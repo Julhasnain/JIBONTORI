@@ -55,7 +55,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
 
                 <div class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-tint"></i></span>
-                    <input id="blood" type="text" class="form-control" name="blood_group" placeholder="Blood Group">
+                    <!--<input id="blood" type="text" class="form-control" name="blood_group" placeholder="Blood Group">-->
+					<select id="blood" type="text" class="form-control" name="blood_group" placeholder="Blood Group">
+						<option value="" selected="selected">Select Blood Group</option>
+						<option value="A+">A+</option>
+						<option value="A-">A-</option>
+						<option value="B+">B+</option>
+						<option value="B-">B-</option>
+						<option value="AB+">AB+</option>
+						<option value="AB-">AB-</option>
+						<option value="O+">O+</option>
+						<option value="O-">O-</option>
+					</select>
                 </div>
 
                 <br>

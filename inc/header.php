@@ -55,7 +55,18 @@ if (isset($_GET['action']) && $_GET['action'] == "logout") {
 
                     <form class="navbar-form navbar-left" action="search.php" method="post">
                         <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Search Blood" name="search" required>
+                            <!--<input type="text" class="form-control" placeholder="Search Blood" name="search" required>-->
+							<select type="text" class="form-control" placeholder="Search Blood" name="search" required>
+								<option value="" selected="selected">Select Blood Group</option>
+								<option value="A+">A+</option>
+								<option value="A-">A-</option>
+								<option value="B+">B+</option>
+								<option value="B-">B-</option>
+								<option value="AB+">AB+</option>
+								<option value="AB-">AB-</option>
+								<option value="O+">O+</option>
+								<option value="O-">O-</option>
+							</select>
                             <div class="input-group-btn">
                                 <button class="btn btn-info" type="submit">
                                     <i class="glyphicon glyphicon-search"></i>
