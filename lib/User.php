@@ -151,7 +151,7 @@ class User
             Session::set("id", $result->id);
             Session::set("name", $result->name);
             Session::set("username", $result->username);
-           // Session::set("loginmsg", "<div class='alert alert-success'><strong>Success! </strong>You are logged in</div>");
+            Session::set("loginmsg", "<div class='alert alert-success'><strong>Success! </strong>You are logged in</div>");
             header("Location: userhome.php");
         } else {
             $msg = "<div class='alert alert-danger'><strong>Error! </strong>Data not found</div>";
