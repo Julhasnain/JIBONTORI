@@ -53,7 +53,7 @@ if (isset($_GET['action']) && $_GET['action'] == "logout") {
                 if ($userlogin == true) {
                     ?>
 
-                    <form class="navbar-form navbar-left" action="search.php" method="post">
+                    <form class="navbar-form navbar-left" action="search.php" method="get">
                         <div class="input-group">
                             <!--<input type="text" class="form-control" placeholder="Search Blood" name="search" required>-->
 							<select type="text" class="form-control" placeholder="Search Blood" name="search" required>
