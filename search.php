@@ -8,8 +8,8 @@ $user = new User();
 
 <?php
 $user = new User();
-if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['search'])) {
-$searchBlood = $_POST['search'];
+if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['search'])) {
+$searchBlood = $_GET['search'];
 ?>
 
 <div class="panel panel-primary">
