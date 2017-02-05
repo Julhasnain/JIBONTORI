@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['delete'])) {
 
 <div class="panel panel-success">
     <div class="panel-heading">
-        <h2>User Profile<span class="pull-right"><a class="btn btn-primary" href="userhome.php">Back</a></span></h2>
+        <h2>User Profile<span class="pull-right"><a class="btn btn-primary" href="#" onClick="history.go(-1)">Back</a></span></h2>
     </div>
 
     <div class="panel-body">
