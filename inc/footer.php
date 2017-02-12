@@ -4,7 +4,7 @@
 </div>-->
 <div class="footer">
         <div class=" container text-center">
-            <p>Copyright &copy; 2017 <a href = "index.php">জীবনতরী</a> | Designed and Developed By জীবনতরী Team</p>
+            <p>Copyright &copy; 2017 <a href = "userhome.php">জীবনতরী</a> | Designed and Developed By জীবনতরী Team</p>
         </div>
 </div>
 
