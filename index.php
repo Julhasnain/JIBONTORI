@@ -191,34 +191,34 @@ if (isset($usrLogin))
                 <div class="section-title center">
                     <h2>Meet The Donors</h2>
                     <hr>
-                    <h4><a href = "register.php">JOIN</a> OUR COMMUNITY, BE A HERO IT'S IN YOUR BLO0D!!</h4><br/><br/>
+                    <h4><a href = "register.php">JOIN</a> OUR COMMUNITY, BE A HERO IT'S IN YOUR BLOOD!!</h4><br/><br/>
                 </div>
                 <div id="row">
                     <div class="col-xs-6 col-md-3 col-sm-6">
-                        <div class="thumbnail"> <img src="assets/img/d01.jpg" alt="..." class="img-thumbnail team-img">
+                        <div class="thumbnail"> <img src="assets/img/03.jpg" alt="..." class="img-thumbnail team-img">
                             <div class="caption">
-                                <h3>John Doe</h3>
+                                <h3>Shabaz Abdullah</h3>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-6 col-md-3 col-sm-6">
-                        <div class="thumbnail"> <img src="assets/img/d02.jpg"" alt="..." class="img-thumbnail team-img">
+                        <div class="thumbnail"> <img src="assets/img/10.jpg"" alt="..." class="img-thumbnail team-img">
                             <div class="caption">
-                                <h3>Mike Doe</h3>
+                                <h3>Rakibul Huda</h3>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-6 col-md-3 col-sm-6">
-                        <div class="thumbnail"> <img src="assets/img/d03.jpg"" alt="..." class="img-thumbnail team-img">
+                        <div class="thumbnail"> <img src="assets/img/013.jpg"" alt="..." class="img-thumbnail team-img">
                             <div class="caption">
-                                <h3>Jane Doe</h3>
+                                <h3>Julhasnain</h3>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-6 col-md-3 col-sm-6">
-                        <div class="thumbnail"> <img src="assets/img/d04.jpg"" alt="..." class="img-thumbnail team-img">
+                        <div class="thumbnail"> <img src="assets/img/16.jpg"" alt="..." class="img-thumbnail team-img">
                             <div class="caption">
-                                <h3>Larry Show</h3>
+                                <h3>Imran Hossain</h3>
                             </div>
                         </div>
                     </div>

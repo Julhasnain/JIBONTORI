@@ -270,9 +270,9 @@ textarea {
 img.img-thumbnail.team-img {
     width: 200px;
     height: 200px;
-    border: 0;
+    border: 1px solid #fff;
     border-radius: 0;
-    background-color: #f6f6f6;
+    background-color: #fff;
 }
 .team .thumbnail {
     background: transparent;
