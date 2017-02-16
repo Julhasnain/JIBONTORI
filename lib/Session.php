@@ -51,8 +51,14 @@ class Session
     public static function checkLogin()
     {
         if (self::get("login") == true) {
-            header("Location: index.php");
+            header("Location: userhome.php");
         }
+    }
+    public static function checkRegister()
+    {
+        if (self::get("register") == true)
+            header("Location: userhome.php");
+        //echo "YO";
     }
 
     public static function destroy()
@@ -61,6 +67,7 @@ class Session
         session_destroy();
         header("Location: index.php"); //login.php to index.php
     }
+
 
 }
 
