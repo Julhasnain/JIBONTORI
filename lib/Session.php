@@ -10,20 +10,6 @@ class Session
 {
     public static function init()
     {
-        /* if(version_compare(phpversion(),'5.4.0','<'))
-         {
-             if(session_id()=='')
-             {
-                 session_start();
-             }
-             else
-             {
-                 if(session_status()== PHP_SESSION_NONE)
-                 {
-                     session_start();
-                 }
-             }
-         }*/
         session_start();
     }
 
@@ -44,7 +30,7 @@ class Session
     {
         if (self::get("login") == false) {
             self::destroy();
-            header("Location: index.php"); //login.php to index.php
+            //header("Location: index.php"); //login.php to index.php
         }
     }
 
@@ -58,14 +44,14 @@ class Session
     {
         if (self::get("register") == true)
             header("Location: userhome.php");
-        //echo "YO";
+        //echo "YOo";
     }
 
     public static function destroy()
     {
         session_unset();
         session_destroy();
-        header("Location: index.php"); //login.php to index.php
+        header("Location: userhome.php"); //login.php to index.php
     }
 
 
