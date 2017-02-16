@@ -51,7 +51,7 @@ class Session
     {
         session_unset();
         session_destroy();
-        header("Location: userhome.php"); //login.php to index.php
+        header("Location: index.php"); //login.php to index.php
     }
 
 
