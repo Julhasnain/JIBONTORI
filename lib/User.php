@@ -148,6 +148,7 @@ class User
         if ($result) {
             Session::init();
             Session::set("login", true);
+            Session::set("register",true);
             Session::set("id", $result->id);
             Session::set("name", $result->name);
             Session::set("username", $result->username);
