@@ -1,7 +1,13 @@
 <?php
+<<<<<<< HEAD
 /*include "inc/header.php";*/
 
 include "lib/User.php";
+=======
+//include "inc/header.php";
+include "lib/User.php";
+//include "lib/Session.php";
+>>>>>>> c353200879857984d7e54f94d4f01a5f4bd03662
 Session::init();
 Session::checkLogin();
 ?>

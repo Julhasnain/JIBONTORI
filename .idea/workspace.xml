@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="008e4381-4e4a-463d-9edb-0b8b770a73a6" name="Default" comment="">
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db_lr.sql.zip" afterPath="$PROJECT_DIR$/db_lr.sql.zip" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Jibontori.iml" afterPath="$PROJECT_DIR$/.idea/Jibontori.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/User.php" afterPath="$PROJECT_DIR$/lib/User.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profile.php" afterPath="$PROJECT_DIR$/profile.php" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+>>>>>>> c353200879857984d7e54f94d4f01a5f4bd03662
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,12 +31,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="102">
               <caret line="6" column="2" lean-forward="false" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
               <folding />
+=======
+            <state vertical-scroll-proportion="0.04851752">
+              <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+>>>>>>> c353200879857984d7e54f94d4f01a5f4bd03662
             </state>
           </provider>
         </entry>
@@ -39,6 +52,7 @@
       <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/User.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="4646">
               <caret line="307" column="50" lean-forward="true" selection-start-line="307" selection-start-column="50" selection-end-line="307" selection-end-column="50" />
               <folding>
@@ -57,6 +71,22 @@
                 <marker date="1487391042372" expanded="true" signature="10986:11073" ph="UPDATE tbl_u... " />
                 <marker date="1487391042372" expanded="true" signature="11651:11705" ph="SELECT * fro... tbl_user" />
                 <marker date="1487391042372" expanded="true" signature="11953:12013" ph="DELETE from " />
+=======
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1487256916858" expanded="true" signature="2360:2503" placeholder="INSERT INTO tbl_user... " />
+                <marker date="1487256916858" expanded="true" signature="3371:3427" placeholder="SELECT usern... tbl_user" />
+                <marker date="1487256916858" expanded="true" signature="3728:3775" placeholder="SELECT email... tbl_user" />
+                <marker date="1487256916858" expanded="true" signature="4083:4159" placeholder="SELECT * fro... tbl_user" />
+                <marker date="1487256916858" expanded="true" signature="5900:5940" placeholder="SELECT * fro... tbl_user" />
+                <marker date="1487256916858" expanded="true" signature="6148:6193" placeholder="SELECT * fro... tbl_user" />
+                <marker date="1487256916858" expanded="true" signature="7948:8188" placeholder="UPDATE tbl_u... " />
+                <marker date="1487256916858" expanded="true" signature="9066:9135" placeholder="SELECT passw... tbl_user" />
+                <marker date="1487256916858" expanded="true" signature="10211:10298" placeholder="UPDATE tbl_u... " />
+                <marker date="1487256916858" expanded="true" signature="10876:10930" placeholder="SELECT * fro... tbl_user" />
+                <marker date="1487256916858" expanded="true" signature="11178:11238" placeholder="DELETE from " />
+>>>>>>> c353200879857984d7e54f94d4f01a5f4bd03662
               </folding>
             </state>
           </provider>
@@ -65,8 +95,13 @@
       <file leaf-file-name="header.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/inc/header.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="34">
               <caret line="2" column="47" lean-forward="true" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
+=======
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> c353200879857984d7e54f94d4f01a5f4bd03662
               <folding />
             </state>
           </provider>
@@ -75,6 +110,7 @@
       <file leaf-file-name="Session.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/Session.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="121">
               <caret line="39" column="31" lean-forward="false" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
               <folding />
@@ -87,6 +123,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2161">
               <caret line="148" column="73" lean-forward="false" selection-start-line="148" selection-start-column="73" selection-end-line="148" selection-end-column="73" />
+=======
+            <state vertical-scroll-proportion="-5.5384617">
+              <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+>>>>>>> c353200879857984d7e54f94d4f01a5f4bd03662
               <folding />
             </state>
           </provider>
@@ -95,8 +135,13 @@
       <file leaf-file-name="userhome.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/userhome.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="376">
               <caret line="29" column="33" lean-forward="false" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+=======
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> c353200879857984d7e54f94d4f01a5f4bd03662
               <folding />
             </state>
           </provider>
@@ -115,15 +160,19 @@
     </leaf>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/lib/Session.php" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/lib/User.php" />
         <option value="$PROJECT_DIR$/profile.php" />
+=======
+        <option value="$PROJECT_DIR$/index.php" />
+>>>>>>> c353200879857984d7e54f94d4f01a5f4bd03662
       </list>
     </option>
   </component>
@@ -259,7 +308,13 @@
       <option name="project" value="LOCAL" />
       <updated>1487255213878</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="session">
+      <created>1487257172304</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1487257172304</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -271,14 +326,19 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12776957" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
+=======
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.49707174" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329653" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
+>>>>>>> c353200879857984d7e54f94d4f01a5f4bd03662
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.49707174" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -315,6 +375,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/User.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
@@ -333,6 +394,22 @@
             <marker date="1487391042372" expanded="true" signature="10986:11073" ph="UPDATE tbl_u... " />
             <marker date="1487391042372" expanded="true" signature="11651:11705" ph="SELECT * fro... tbl_user" />
             <marker date="1487391042372" expanded="true" signature="11953:12013" ph="DELETE from " />
+=======
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1487256916858" expanded="true" signature="2360:2503" placeholder="INSERT INTO tbl_user... " />
+            <marker date="1487256916858" expanded="true" signature="3371:3427" placeholder="SELECT usern... tbl_user" />
+            <marker date="1487256916858" expanded="true" signature="3728:3775" placeholder="SELECT email... tbl_user" />
+            <marker date="1487256916858" expanded="true" signature="4083:4159" placeholder="SELECT * fro... tbl_user" />
+            <marker date="1487256916858" expanded="true" signature="5900:5940" placeholder="SELECT * fro... tbl_user" />
+            <marker date="1487256916858" expanded="true" signature="6148:6193" placeholder="SELECT * fro... tbl_user" />
+            <marker date="1487256916858" expanded="true" signature="7948:8188" placeholder="UPDATE tbl_u... " />
+            <marker date="1487256916858" expanded="true" signature="9066:9135" placeholder="SELECT passw... tbl_user" />
+            <marker date="1487256916858" expanded="true" signature="10211:10298" placeholder="UPDATE tbl_u... " />
+            <marker date="1487256916858" expanded="true" signature="10876:10930" placeholder="SELECT * fro... tbl_user" />
+            <marker date="1487256916858" expanded="true" signature="11178:11238" placeholder="DELETE from " />
+>>>>>>> c353200879857984d7e54f94d4f01a5f4bd03662
           </folding>
         </state>
       </provider>
@@ -401,7 +478,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inc/header.php">
+    <entry file="file://$PROJECT_DIR$/register.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -425,6 +502,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/register.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -445,11 +523,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/lib/Session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.5384617">
+          <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+>>>>>>> c353200879857984d7e54f94d4f01a5f4bd03662
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/register.php">
+    <entry file="file://$PROJECT_DIR$/inc/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -457,8 +541,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/lib/User.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="102">
           <caret line="6" column="2" lean-forward="false" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
           <folding />
@@ -509,15 +594,41 @@
             <marker date="1487391042372" expanded="true" signature="10986:11073" ph="UPDATE tbl_u... " />
             <marker date="1487391042372" expanded="true" signature="11651:11705" ph="SELECT * fro... tbl_user" />
             <marker date="1487391042372" expanded="true" signature="11953:12013" ph="DELETE from " />
+=======
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1487256916858" expanded="true" signature="2360:2503" placeholder="INSERT INTO tbl_user... " />
+            <marker date="1487256916858" expanded="true" signature="3371:3427" placeholder="SELECT usern... tbl_user" />
+            <marker date="1487256916858" expanded="true" signature="3728:3775" placeholder="SELECT email... tbl_user" />
+            <marker date="1487256916858" expanded="true" signature="4083:4159" placeholder="SELECT * fro... tbl_user" />
+            <marker date="1487256916858" expanded="true" signature="5900:5940" placeholder="SELECT * fro... tbl_user" />
+            <marker date="1487256916858" expanded="true" signature="6148:6193" placeholder="SELECT * fro... tbl_user" />
+            <marker date="1487256916858" expanded="true" signature="7948:8188" placeholder="UPDATE tbl_u... " />
+            <marker date="1487256916858" expanded="true" signature="9066:9135" placeholder="SELECT passw... tbl_user" />
+            <marker date="1487256916858" expanded="true" signature="10211:10298" placeholder="UPDATE tbl_u... " />
+            <marker date="1487256916858" expanded="true" signature="10876:10930" placeholder="SELECT * fro... tbl_user" />
+            <marker date="1487256916858" expanded="true" signature="11178:11238" placeholder="DELETE from " />
+>>>>>>> c353200879857984d7e54f94d4f01a5f4bd03662
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/inc/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="47" lean-forward="true" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
           <folding />
+=======
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.04851752">
+          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+>>>>>>> c353200879857984d7e54f94d4f01a5f4bd03662
         </state>
       </provider>
     </entry>
