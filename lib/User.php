@@ -79,7 +79,16 @@ class User
         $query->bindValue(':last_donated', $donated);
         //$query->bindValue(':days', $diff);
         $result = $query->execute();
+
         if ($result) {
+            //todo last inserted user id
+            $sql1 = "INSERT INTO user_info(userid,pro_name,pro_value) VALUES(:userid,user_level,0)";
+            $query = $this->db->pdo->prepare($sql);
+            $query->bindValue(':name', $name);
+            $query->bindValue(':username', $username);
+            $query->bindValue(':email', $email);
+            $query->bindValue(':password', $password);
+            $query->bindValue(':blood_group', strtoupper($blood_group));
            $msg = "<div class='alert alert-success'><strong>Congratulations! </strong>You have been registered successfully.Now Login :)</div>";
             return $msg;
         } else {
@@ -162,11 +171,20 @@ class User
 
     public function getUserData()
     {
-        $sql = "SELECT * from tbl_user ORDER BY name ASC ";
+        $sql = "SELECT * from tbl_user  ORDER BY name ASC ";
         $query = $this->db->pdo->prepare($sql);
         $query->execute();
         $result = $query->fetchAll();
         return $result;
+    }
+
+    public function getUserLevel($user_id)
+    {
+        $sql = "SELECT * from user_info WHERE userid=$user_id AND pro_name='user_level' ";
+        $query = $this->db->pdo->prepare($sql);
+        $query->execute();
+        $result = $query->fetchAll();
+        return $result[0]['pro_value'];
     }
 
 

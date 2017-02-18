@@ -1,9 +1,10 @@
 <?php
-include "inc/header.php";
+/*include "inc/header.php";*/
+
 include "lib/User.php";
+Session::init();
 Session::checkLogin();
 ?>
-
 <?php
 $user = new User();
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
@@ -15,6 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login'])) {
 if (isset($usrLogin))
 	echo $usrLogin;
 ?>
+
 
            
 <!doctype html>
@@ -77,37 +79,37 @@ if (isset($usrLogin))
     <div class ="extra"></div>
 
     <!-- -------------------------------Slider Section ------------------------------------>
-    <div id="">
-        <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1300px; height: 580px; overflow: hidden; visibility: hidden;">
-            <!-- Loading Screen -->
-            <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
-                <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
-                <div style="position:absolute;display:block;background:url('assets/img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
-            </div>
+    
+	<div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1300px; height: 580px; overflow: hidden; visibility: hidden;">
+		<!-- Loading Screen -->
+		<div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+			<div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+			<div style="position:absolute;display:block;background:url('assets/img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+		</div>
 
-            <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1300px; height: 600px; overflow: hidden;">
-                <div data-p="225.00">
-                    <img data-u="image" src="assets/img/slider1.png" />
-                </div>
-                <div data-p="225.00" style="display:none;">
-                    <img data-u="image" src="assets/img/slider2.jpg" />
-                </div>
-                <div data-p="225.00" style="display:none;">
-                    <img data-u="image" src="assets/img/slider3.jpg" />
-                </div>
-            </div>
+		<div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1300px; height: 600px; overflow: hidden;">
+			<div data-p="225.00">
+				<img data-u="image" src="assets/img/slider1.png" />
+			</div>
+			<div data-p="225.00" style="display:none;">
+				<img data-u="image" src="assets/img/slider2.jpg" />
+			</div>
+			<div data-p="225.00" style="display:none;">
+				<img data-u="image" src="assets/img/slider3.jpg" />
+			</div>
+		</div>
 
-            <!-- Bullet Navigator -->
-            <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
-                <!-- bullet navigator item prototype -->
-                <div data-u="prototype" style="width:16px;height:16px;"></div>
-            </div>
-            <!-- Arrow Navigator -->
-            <span data-u="arrowleft" class="jssora22l" style="top:0px;left:8px;width:40px;height:58px;" data-autocenter="2"></span>
-            <span data-u="arrowright" class="jssora22r" style="top:0px;right:8px;width:40px;height:58px;" data-autocenter="2"></span>
-        </div>
-        <!-- #endregion Jssor Slider End -->
-    </div>
+		<!-- Bullet Navigator -->
+		<div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+			<!-- bullet navigator item prototype -->
+			<div data-u="prototype" style="width:16px;height:16px;"></div>
+		</div>
+		<!-- Arrow Navigator -->
+		<span data-u="arrowleft" class="jssora22l" style="top:0px;left:8px;width:40px;height:58px;" data-autocenter="2"></span>
+		<span data-u="arrowright" class="jssora22r" style="top:0px;right:8px;width:40px;height:58px;" data-autocenter="2"></span>
+	</div>
+	<!-- #endregion Jssor Slider End -->
+    
 
       <!-- About Section -->
     <div class="about">
@@ -178,129 +180,127 @@ if (isset($usrLogin))
 						period and a light snack.
 					  </p>	
 					</div>
-                </div>
-					
-               
+                </div>	
             </div>
-      </div>
+        </div>
     </div>
 
 
-        <!-- Donor -->
-        <div class="team text-center">
-            <div class="container">
-                <div class="section-title center">
-                    <h2>Meet The Donors</h2>
-                    <hr>
-                    <h4><a href = "register.php">JOIN</a> OUR COMMUNITY, BE A HERO IT'S IN YOUR BLOOD!!</h4><br/><br/>
-                </div>
-                <div id="row">
-                    <div class="col-xs-6 col-md-3 col-sm-6">
-                        <div class="thumbnail"> <img src="assets/img/03.jpg" alt="..." class="img-thumbnail team-img">
-                            <div class="caption">
-                                <h3>Shabaz Abdullah</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-md-3 col-sm-6">
-                        <div class="thumbnail"> <img src="assets/img/10.jpg"" alt="..." class="img-thumbnail team-img">
-                            <div class="caption">
-                                <h3>Rakibul Huda</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-md-3 col-sm-6">
-                        <div class="thumbnail"> <img src="assets/img/013.jpg"" alt="..." class="img-thumbnail team-img">
-                            <div class="caption">
-                                <h3>Julhasnain</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-md-3 col-sm-6">
-                        <div class="thumbnail"> <img src="assets/img/16.jpg"" alt="..." class="img-thumbnail team-img">
-                            <div class="caption">
-                                <h3>Imran Hossain</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+	<!-- Donor -->
+	<div class="team text-center">
+		<div class="container">
+			<div class="section-title center">
+				<h2>Meet The Donors</h2>
+				<hr>
+				<h4><a href = "register.php">JOIN</a> OUR COMMUNITY, BE A HERO IT'S IN YOUR BLOOD!!</h4><br/><br/>
+			</div>
+			<div id="row">
+				<div class="col-xs-6 col-md-3 col-sm-6">
+					<div class="thumbnail"> <img src="assets/img/03.jpg" alt="..." class="img-thumbnail team-img">
+						<div class="caption">
+							<h3>Shabaz Abdullah</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-3 col-sm-6">
+					<div class="thumbnail"> <img src="assets/img/10.jpg"" alt="..." class="img-thumbnail team-img">
+						<div class="caption">
+							<h3>Rakibul Huda</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-3 col-sm-6">
+					<div class="thumbnail"> <img src="assets/img/013.jpg"" alt="..." class="img-thumbnail team-img">
+						<div class="caption">
+							<h3>Julhasnain</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-3 col-sm-6">
+					<div class="thumbnail"> <img src="assets/img/16.jpg"" alt="..." class="img-thumbnail team-img">
+						<div class="caption">
+							<h3>Imran Hossain</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
      <!--Contact Section-->
      <?php
        include("ContactMail.php");
      ?>
-    <div>
-        <div id="contact" class="contact text-center">
-            <div class="container">
-                <div class=" center">
-                    <h2>Contact</h2>
-                    <hr>
-                </div>
-                <div class="col-md-8 col-md-offset-2">
-                    <div class="col-md-4"> <i class="fa fa-map-marker fa-2x"></i>
-                        <p>4321 Chawkbazer ,<br>
-                            Chittagong, Bangladesh</p>
-                    </div>
-                    <div class="col-md-4"> <i class="fa fa-envelope-o fa-2x"></i>
-                        <p>jibontori768@gmail.com</p>
-                    </div>
-                    <div class="col-md-4"> <i class="fa fa-phone fa-2x"></i>
-                        <p> +880 123 456 1234</p>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="col-md-8 col-md-offset-2">
-                    <h3>Leave us a message</h3>
-                    <form name="sentMessage" id="contactForm" method="post">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" name="name" id="name" class="form-control" placeholder="Name" required="required">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="email" name="email" id="email" class="form-control" placeholder="Email" required="required">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-							<div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" name="phone"  class="form-control" placeholder="Contact Number">
-                                </div>
-                            </div>
-							<div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" name="subject" class="form-control" placeholder="Subject" required="required">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <textarea name="messages" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
-                        </div>
-                        <div id="success"></div>
-                        <button type="submit" name="submit" class="btn btn-default" >Send Message</button>
-                    </form>
-                    <div class="social">
-                        <ul>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                            <li><a href="#"><i class="fa fa-wikipedia-w"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+  
+	<div id="contact" class="contact text-center">
+		<div class="container">
+			<div class=" center">
+				<h2>Contact</h2>
+				<hr>
+			</div>
+			<div class="col-md-8 col-md-offset-2">
+				<div class="col-md-4"> <i class="fa fa-map-marker fa-2x"></i>
+					<p>4321 Chawkbazer ,<br>
+						Chittagong, Bangladesh</p>
+				</div>
+				<div class="col-md-4"> <i class="fa fa-envelope-o fa-2x"></i>
+					<p>jibontori768@gmail.com</p>
+				</div>
+				<div class="col-md-4"> <i class="fa fa-phone fa-2x"></i>
+					<p> +880 123 456 1234</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="col-md-8 col-md-offset-2">
+				<h3>Leave us a message</h3>
+				<form name="sentMessage" id="contactForm" method="post">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="text" name="name" id="name" class="form-control" placeholder="Name" required="required">
+								<p class="help-block text-danger"></p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="email" name="email" id="email" class="form-control" placeholder="Email" required="required">
+								<p class="help-block text-danger"></p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="text" name="phone"  class="form-control" placeholder="Contact Number">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="text" name="subject" class="form-control" placeholder="Subject" required="required">
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<textarea name="messages" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+					</div>
+					<div id="success"></div>
+					<button type="submit" name="submit" class="btn btn-default" >Send Message</button>
+				</form>
+				<div class="social">
+					<ul>
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fa fa-rss"></i></a></li>
+						<li><a href="#"><i class="fa fa-wikipedia-w"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+  
 
     <!--Footer Section-->
     <div  class="footer">
         <div class=" container text-center">
-            <p>Copyright &copy; 2017 <a href = "index.php">জীবনতরী</a> | Designed and Developed By জীবনতরী Team</p>
+            <p>Copyright &copy; 2017  জীবনতরী | Designed and Developed By জীবনতরী Team</p>
         </div>
     </div>
 
@@ -314,16 +314,7 @@ if (isset($usrLogin))
         <script src="assets/js/main.js"></script>
 
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
-        -->
+        
 
 
 
@@ -331,8 +322,9 @@ if (isset($usrLogin))
         <!-- #region Jssor Slider Begin -->
         <!-- Generator: Jssor Slider Maker -->
         <!-- Source: http://www.jssor.com -->
-        <!-- This code works with jquery library.
-        <script src="assets/js/jquery-1.11.3.min.js" type="text/javascript" data-library="jquery" data-version="1.11.3"></script>-->
+        <!-- This code works with jquery library.-->
+		
+        <script src="assets/js/jquery-1.11.3.min.js" type="text/javascript" data-library="jquery" data-version="1.11.3"></script>
         <script src="assets/js/jssor.slider-22.0.15.mini.js" type="text/javascript" data-library="jssor.slider.mini" data-version="22.0.15"></script>
         <script type="text/javascript">
             jQuery(document).ready(function ($) {
