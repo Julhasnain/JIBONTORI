@@ -58,29 +58,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand text-center">জীবনতরী</a>
+			
         </div>
 
-        <!-- <ul class="nav navbar-nav">
-            <li>
-                <?php
-        if (isset($usrLogin))
-            echo $usrLogin;
-        ?>
-            </li>
-        </ul>-->
+         
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-
             <form action="" method="post" class="navbar-form navbar-right">
                 <ul class="nav navbar-nav">
                     <li>
-                        <div class="form-group">
+                        <div>
                             <?php
-                            if (isset($usrLogin)) { ?>
-                                <?php echo $usrLogin; ?>
-                            <?php } ?>
+                            if (isset($usrLogin))
+                                echo $usrLogin;
+                            ?>
                         </div>
                     </li>
                     <li>
