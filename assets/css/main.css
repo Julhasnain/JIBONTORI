@@ -421,14 +421,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
     font-size: 15px;
 
 }
-.footer a {
-    color: #a0a5a5;
-    border-bottom: 1px dashed #a0a5a5;
-}
-.footer a:hover {
-    color: #dc143c;
-    text-decoration: none;
-}
+
 
 
 

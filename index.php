@@ -333,6 +333,7 @@ include("ContactMail.php");
                     </div>
                     <div id="success"></div>
                     <button type="submit" name="submit" class="btn btn-default">Send Message</button>
+					
                 </form>
                 <div class="social">
                     <ul>
@@ -351,7 +352,7 @@ include("ContactMail.php");
 <!--Footer Section-->
 <div class="footer">
     <div class=" container text-center">
-        <p>Copyright &copy; 2017 <a href="index.php">জীবনতরী</a> | Designed and Developed By জীবনতরী Team</p>
+        <p>Copyright &copy; 2017 ]জীবনতরী  |  Designed and Developed By Team জীবনতরী </p>
     </div>
 </div>
 
