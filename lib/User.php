@@ -140,7 +140,7 @@ class User
 
 
         if ($email == "" OR $password == "") {
-            $msg = "<div class='text-danger 'style=\"white-space:pre\"><h4>Invalid Login!!                                            </h4></div>";
+            $msg = "<div class='text-danger 'style=\"white-space:pre\"><h4>Invalid Login!!                        </h4></div>";
             return $msg;
         }
         if (filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
@@ -149,7 +149,7 @@ class User
         }
 
         if ($chk_email == false) {
-            $msg = "<div class='text-danger'style=\"white-space:pre\"><h4>Invalid Email!!                                            </h4></div>";
+            $msg = "<div class='text-danger'style=\"white-space:pre\"><h4>Invalid Email!!                        </h4></div>";
             return $msg;
         }
 
@@ -164,7 +164,7 @@ class User
             Session::set("loginmsg", "<div class='alert alert-success'><strong>Success! </strong>You are logged in</div>");
             header("Location: userhome.php");
         } else {
-            $msg = "<div class='text-danger'style=\"white-space:pre\"><h4>Invalid Password!!                                            </h4></div>";
+            $msg = "<div class='text-danger'style=\"white-space:pre\"><h4>Invalid Password!!                        </h4></div>";
             return $msg;
         }
     }
