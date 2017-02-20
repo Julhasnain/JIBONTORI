@@ -50,7 +50,7 @@ class User
             return $msg;
         }
         if (strlen($password) < 4) {
-            $msg = "<div class='alert alert-danger'><strong>Error! </strong>Password too short</div>";
+            $msg = "<div class='alert alert-danger'><strong>Error! </strong>Password must be contained more than 3 charecter.</div>";
             return $msg;
         }
         if (filter_var($email, FILTER_VALIDATE_EMAIL) === false) {

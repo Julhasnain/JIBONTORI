@@ -54,7 +54,7 @@ Session::set("loginmsg", null);
     <div class="panel-body">
         <table class="table table-striped">
             <tr>
-                <!--<th width="20%">Serial</th>-->
+                <th width="20%">Serial</th>
                 <th width="20%">Name</th>
                 <th width="20%">Email</th>
                 <th width="20%">Blood Group</th>

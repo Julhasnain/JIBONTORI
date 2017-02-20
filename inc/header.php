@@ -16,11 +16,11 @@ date_default_timezone_set('Asia/Dhaka');
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<!--<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">-->
-		
+
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 		<link rel="stylesheet" href="assets/css/normalize.css">
 		<link rel="stylesheet" href="assets/css/main.css">
-	
+
 		<script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
 		<script src="inc/jquery.min.js"></script>
 		<script src="assets/js/bootstrap.min.js"></script>
@@ -29,8 +29,8 @@ date_default_timezone_set('Asia/Dhaka');
 	 <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-		
-		
+
+
 
 <?php
 if (isset($_GET['action']) && $_GET['action'] == "logout") {

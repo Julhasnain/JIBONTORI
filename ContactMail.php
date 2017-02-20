@@ -35,7 +35,7 @@ Comments:	'.$_POST['messages'].'
     // Send To
     $mail->AddAddress("jibontori768@gmail.com", "Recipient Name"); // Where to send it - Recipient
     $result = $mail->Send();		// Send!
-	$message = $result ? 'Successfully Sent!' : 'Sending Failed!';
+	$message = $result ? "<div class='alert alert-success'> Successfully Sent!!</div>" : "<div class='alert alert-success'>Sending Failed!!</div>";
 	unset($mail);
 
 }

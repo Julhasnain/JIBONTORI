@@ -274,9 +274,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
     </div>
 </div>
 <!--Contact Section-->
-<?php
-include("ContactMail.php");
-?>
+
 <div>
     <div id="contact" class="contact text-center">
         <div class="container">
@@ -331,13 +329,18 @@ include("ContactMail.php");
                         <textarea name="messages" id="message" class="form-control" rows="4" placeholder="Message"
                                   required></textarea>
                     </div>
-                    <div id="success"></div>
+                    <div style="font-size: 15px;">
+                        <?php
+                            include("ContactMail.php");
+                            if(isset($_POST['submit'])){
+                            echo $message;
+                            }
+                        ?>
+
+                    </div>
                     <button type="submit" name="submit" class="btn btn-default">Send Message</button>
 
-                    <?php
-                    if(isset($_POST['submit']))
-                    echo "mail sent";
-                    ?>
+
 
                 </form>
                 <div class="social">

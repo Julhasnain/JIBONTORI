@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
                 <div class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                     <input id="username" type="text" class="form-control" name="username"
-                           placeholder="Username(Can contain alphanumeric,dash,underscore.Can not be changed later)">
+                           placeholder="Username">
                 </div>
 
                 <br>
@@ -49,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
                 <div class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
                     <input id="password" type="password" class="form-control" name="password"
-                           placeholder="Password(must be greater than 3 characters)">
+                           placeholder="Password">
                 </div>
 
                 <br>
@@ -58,7 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
                     <span class="input-group-addon"><i class="glyphicon glyphicon-tint"></i></span>
                     <!--<input id="blood" type="text" class="form-control" name="blood_group" placeholder="Blood Group">-->
 					<select id="blood" type="text" class="form-control" name="blood_group" placeholder="Blood Group">
-						<option value="" selected="selected">Select Blood Group</option>
+						<option value="" selected="selected">Blood Group</option>
 						<option value="A+">A+</option>
 						<option value="A-">A-</option>
 						<option value="B+">B+</option>
