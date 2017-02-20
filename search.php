@@ -14,15 +14,15 @@ $searchBlood = $_GET['search'];
 
 <div class="panel panel-primary">
     <div class="panel-heading">
-        <h2><?php echo strtoupper($searchBlood); ?> Doner List<span class="pull-right">Welcome! <strong>
+        <h2><?php echo strtoupper($searchBlood); ?> Doner List<!--<span class="pull-right">Welcome! <strong>
                     <?php
-                    $name = Session::get("name");
+                    /*$name = Session::get("name");
                     if (isset($name)) {
                         echo $name;
                     }
-                    ?>
+                    */?>
 
-                </strong></span></h2>
+                </strong></span></h2>-->
     </div>
 
 
@@ -40,7 +40,7 @@ $searchBlood = $_GET['search'];
                 <th width="20%">Serial</th>
                 <th width="20%">Name</th>
                 <th width="20%">Last Donation(Days ago)</th>
-                <th width="20%">Email</th>
+                <!--<th width="20%">Email</th>-->
                 <th width="20%">Action</th>
             </tr>
 
@@ -58,7 +58,7 @@ $searchBlood = $_GET['search'];
                         <td><?php echo $i++; ?> </td>
                         <td><?php echo $sdata['name']; ?></td>
                         <td><?php echo $diff; ?></td>
-                        <td><?php echo $sdata['email']; ?></td>
+                        <!--<td><?php echo $sdata['email']; ?></td>-->
                         <td><a class="btn btn-info"
                                href="profile.php?id=<?php echo $sdata['id']; ?>">View</a>
                         </td>
@@ -68,7 +68,7 @@ $searchBlood = $_GET['search'];
                         <td><?php echo $i++; ?> </td>
                         <td><?php echo $sdata['name']; ?></td>
                         <td><?php echo $diff; ?></td>
-                        <td><?php echo $sdata['email']; ?></td>
+                        <!--<td><?php echo $sdata['email']; ?></td>-->
                         <td><a class="btn btn-info"
                                href="profile.php?id=<?php echo $sdata['id']; ?>">View</a>
                         </td>

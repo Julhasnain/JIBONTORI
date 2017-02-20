@@ -65,6 +65,16 @@ class User
             $msg = "<div class='alert alert-danger'><strong>Error! </strong>Username already exists</div>";
             return $msg;
         }
+        list($dd,$mm,$yyyy) = explode('-',$donated);
+        if (!checkdate($dd,$mm,$yyyy)) {
+            $msg = "<div class='alert alert-danger'><strong>Error! </strong>Date format not valid</div>";
+            return $msg;
+        }
+        if(strlen($dd) != 2 || strlen($mm) != 2 || strlen($yyyy) != 4)
+        {
+            $msg = "<div class='alert alert-danger'><strong>Error! </strong>Date format not valid</div>";
+            return $msg;
+        }
 
         $password = md5($password);
 
@@ -82,13 +92,13 @@ class User
 
         if ($result) {
             //todo last inserted user id
-            $sql1 = "INSERT INTO user_info(userid,pro_name,pro_value) VALUES(:userid,user_level,0)";
-            $query = $this->db->pdo->prepare($sql);
-            $query->bindValue(':name', $name);
-            $query->bindValue(':username', $username);
-            $query->bindValue(':email', $email);
-            $query->bindValue(':password', $password);
-            $query->bindValue(':blood_group', strtoupper($blood_group));
+            $sql1 = "INSERT INTO user_info(username,pro_name,pro_value) VALUES(:username,:pro_name,:pro_value)";
+            $query1 = $this->db->pdo->prepare($sql1);
+            $query1->bindValue(':username', $username);
+            $query1->bindValue(':pro_name', "user");
+            $query1->bindValue(':pro_value', "0");
+            $query1->execute();
+
            $msg = "<div class='alert alert-success'><strong>Congratulations! </strong>You have been registered successfully.Now Login :)</div>";
             return $msg;
         } else {
@@ -140,7 +150,7 @@ class User
 
 
         if ($email == "" OR $password == "") {
-            $msg = "<div class='text-danger 'style=\"white-space:pre\"><h4>Invalid Login!!                        </h4></div>";
+            $msg = "<div class='text-danger ' style=\"white-space:pre\"><h4>Invalid Login!!                                            </h4></div>";
             return $msg;
         }
         if (filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
@@ -149,7 +159,7 @@ class User
         }
 
         if ($chk_email == false) {
-            $msg = "<div class='text-danger'style=\"white-space:pre\"><h4>Invalid Email!!                        </h4></div>";
+            $msg = "<div class='text-danger' style=\"white-space:pre\"><h4>Invalid Email!!                                            </h4></div>";
             return $msg;
         }
 
@@ -161,10 +171,11 @@ class User
             Session::set("id", $result->id);
             Session::set("name", $result->name);
             Session::set("username", $result->username);
-            Session::set("loginmsg", "<div class='alert alert-success'><strong>Success! </strong>You are logged in</div>");
+            Session::set("loginmsg", "<div class='alert alert-success'>Welcome! <strong>$result->name</strong></div>");
             header("Location: userhome.php");
         } else {
-            $msg = "<div class='text-danger'style=\"white-space:pre\"><h4>Invalid Password!!                        </h4></div>";
+            $msg = "<div class='text-danger' style=\"white-space:pre\"><h4>Invalid Password!!                                            </h4></div>";
+
             return $msg;
         }
     }
@@ -178,13 +189,15 @@ class User
         return $result;
     }
 
-    public function getUserLevel($user_id)
+    public function adminCheck($username)
     {
-        $sql = "SELECT * from user_info WHERE userid=$user_id AND pro_name='user_level' ";
+        $sql = "SELECT pro_value from user_info WHERE username = :username";
         $query = $this->db->pdo->prepare($sql);
+        $query->bindValue(':username', $username);
         $query->execute();
-        $result = $query->fetchAll();
-        return $result[0]['pro_value'];
+        $result = $query->fetch(PDO::FETCH_OBJ);
+        //echo $result;
+        return $result;
     }
 
 
@@ -206,6 +219,11 @@ class User
         $email = $data['email'];
         $blood = $data['blood_group'];
         $lastDonate = $data['lastDonation1'];
+        //echo $lastDonate;
+        $age = $data['age'];
+        if($age == "")
+            $age = 0;
+        $contact = $data['contact'];
         //$date1 = new DateTime("$lastDonate");
         //echo $date1->format("d-m-Y");
         //echo $donated;
@@ -215,10 +233,19 @@ class User
 
         // $chk_username = $this->usernameCheck($username);
 
-        if ($name == "" || $username == "" || $email == "" || $blood == "") {
-            $msg = "<div class='alert alert-danger'><strong>Error! </strong>Field must not be empty</div>";
+        if ($name == "") {
+            $msg = "<div class='alert alert-danger'><strong>Error! </strong>Name must not be empty</div>";
             return $msg;
         }
+        if ($blood == "") {
+            $msg = "<div class='alert alert-danger'><strong>Error! </strong>Blood Group must not be empty</div>";
+            return $msg;
+        }
+        if ($contact == "") {
+            $msg = "<div class='alert alert-danger'><strong>Error! </strong>Contact must not be empty</div>";
+            return $msg;
+        }
+
         if (strlen($username) < 3) {
             $msg = "<div class='alert alert-danger'><strong>Error! </strong>Username too short</div>";
             return $msg;
@@ -231,6 +258,29 @@ class User
             return $msg;
         }
 
+        if($lastDonate[2] != '-' || $lastDonate[5] != '-')
+        {
+            $msg = "<div class='alert alert-danger'><strong>Error! </strong>Date format not valid</div>";
+            return $msg;
+        }
+
+
+        list($dd,$mm,$yyyy) = explode('-',$lastDonate);
+        if (!checkdate($mm,$dd,$yyyy)) {
+            $msg = "<div class='alert alert-danger'><strong>Error! </strong>Date format not valid</div>";
+            return $msg;
+        }
+        //echo $dd."-".$mm."-".$yyyy."<br>";
+        //echo strlen($dd);
+        if(strlen($dd) != 2 || strlen($mm) != 2 || strlen($yyyy) != 4)
+        {
+            $msg = "<div class='alert alert-danger'><strong>Error! </strong>Date format not valid</div>";
+            return $msg;
+        }
+
+
+
+
         /* if ($chk_username == true) {
              $msg = "<div class='alert alert-danger'><strong>Error! </strong>Username already exists</div>";
              return $msg;
@@ -241,7 +291,9 @@ class User
                 username = :username,
                 email = :email,
                 blood_group = :blood_group,
-                last_donated = :last_donated
+                last_donated = :last_donated,
+                age = :age,
+                contact = :contact
 
                 WHERE id = :id";
 
@@ -252,6 +304,9 @@ class User
         $query->bindValue(':id', $id);
         $query->bindValue(':blood_group', $blood);
         $query->bindValue(':last_donated', $lastDonate);
+        $query->bindValue(':age', $age);
+        $query->bindValue(':contact', $contact);
+
         //$query->bindValue(':days', $diff);
         $result = $query->execute();
         if ($result) {
@@ -337,6 +392,9 @@ class User
         $result = $query->execute();
         return $result;
     }
+
+
+
 
 
 }
