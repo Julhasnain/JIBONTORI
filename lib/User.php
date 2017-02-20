@@ -65,6 +65,13 @@ class User
             $msg = "<div class='alert alert-danger'><strong>Error! </strong>Username already exists</div>";
             return $msg;
         }
+        
+         if($donated[2] != '-' || $donated[5] != '-')
+        {
+            $msg = "<div class='alert alert-danger'><strong>Error! </strong>Date format not valid</div>";
+            return $msg;
+        }
+        
         list($dd,$mm,$yyyy) = explode('-',$donated);
         if (!checkdate($dd,$mm,$yyyy)) {
             $msg = "<div class='alert alert-danger'><strong>Error! </strong>Date format not valid</div>";
