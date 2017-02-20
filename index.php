@@ -58,10 +58,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand text-center">জীবনতরী</a>
-			
+
         </div>
 
-         
+
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -333,7 +333,7 @@ include("ContactMail.php");
                     </div>
                     <div id="success"></div>
                     <button type="submit" name="submit" class="btn btn-default">Send Message</button>
-					
+
                 </form>
                 <div class="social">
                     <ul>
@@ -352,7 +352,7 @@ include("ContactMail.php");
 <!--Footer Section-->
 <div class="footer">
     <div class=" container text-center">
-        <p>Copyright &copy; 2017 ]জীবনতরী  |  Designed and Developed By Team জীবনতরী </p>
+        <p>Copyright &copy; 2017 জীবনতরী  |  Designed and Developed By Team জীবনতরী </p>
     </div>
 </div>
 
@@ -363,17 +363,6 @@ include("ContactMail.php");
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/main.js"></script>
 
-
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID.
-<script>
-    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-    e.src='https://www.google-analytics.com/analytics.js';
-    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-    ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-</script>
--->
 
 
 <!--Slider JS-->

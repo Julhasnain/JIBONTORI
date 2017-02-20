@@ -65,13 +65,13 @@ class User
             $msg = "<div class='alert alert-danger'><strong>Error! </strong>Username already exists</div>";
             return $msg;
         }
-        
+
          if($donated[2] != '-' || $donated[5] != '-')
         {
             $msg = "<div class='alert alert-danger'><strong>Error! </strong>Date format not valid</div>";
             return $msg;
         }
-        
+
         list($dd,$mm,$yyyy) = explode('-',$donated);
         if (!checkdate($dd,$mm,$yyyy)) {
             $msg = "<div class='alert alert-danger'><strong>Error! </strong>Date format not valid</div>";
@@ -157,7 +157,7 @@ class User
 
 
         if ($email == "" OR $password == "") {
-            $msg = "<div class='text-danger ' style=\"white-space:pre\"><h4>Invalid Login!!                                            </h4></div>";
+            $msg = "<div class='text-danger ' style=\"white-space:pre\"><h4>Invalid Login!!                          </h4></div>";
             return $msg;
         }
         if (filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
@@ -166,7 +166,7 @@ class User
         }
 
         if ($chk_email == false) {
-            $msg = "<div class='text-danger' style=\"white-space:pre\"><h4>Invalid Email!!                                            </h4></div>";
+            $msg = "<div class='text-danger' style=\"white-space:pre\"><h4>Invalid Email!!                          </h4></div>";
             return $msg;
         }
 
@@ -181,7 +181,7 @@ class User
             Session::set("loginmsg", "<div class='alert alert-success'>Welcome! <strong>$result->name</strong></div>");
             header("Location: userhome.php");
         } else {
-            $msg = "<div class='text-danger' style=\"white-space:pre\"><h4>Invalid Password!!                                            </h4></div>";
+            $msg = "<div class='text-danger' style=\"white-space:pre\"><h4>Invalid Password!!                          </h4></div>";
 
             return $msg;
         }

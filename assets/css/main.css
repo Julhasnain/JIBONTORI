@@ -1,4 +1,4 @@
-/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+﻿/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 
 /*
  * What follows is the result of much research on cross-browser styling.
@@ -99,7 +99,7 @@ textarea {
 /******************************Nav Bar**********************************************/
 
 .navbar-default {
-  background-color: #121D1F;
+  background-color: #000000;
   border-color: #121D1F ;
 }
 .navbar-brand {
@@ -109,7 +109,7 @@ textarea {
   height: 57px;
   line-height: 20px;
   padding: 18px;
-  color: #DC143C!important;
+  color: #d50000!important;
 }
 
 .navbar-right {
@@ -219,7 +219,7 @@ button, input {
 
 .about {
     padding: 60px 0;
-    background: #f6f6f6;
+    background: #e0f7fa;
 }
 .about .about-text {
     margin-left: 10px;
@@ -260,7 +260,8 @@ button, input {
 
 .team {
     padding: 60px 0;
-    background: #f6f6f6;
+    /*background: #f6f6f6;*/
+	background: #e0f7fa;
 }
 .team h4{
     color: #777;
@@ -301,7 +302,8 @@ img.img-thumbnail.team-img {
 .contact {
     padding: 100px 0 40px 0;
     color: #fff;
-    background: #e71f47;
+   /* background: #e71f47;*/
+   background: #039be5;
 }
 .contact h2 {
     color: #fff;
@@ -384,7 +386,7 @@ label {
     transition: all 0.5s;
 }
 .contact .social i.fa:hover {
-    color: #121d1f;
+    color: #000000;
 }
 .contact .btn {
     background-color: transparent;
@@ -395,7 +397,7 @@ label {
     margin-top: 15px;
 }
 .contact .btn:hover, .contact .btn:focus {
-    background-color: #121d1f;
+    background-color: #000000;
     border: 1px solid #121d1f;
 }
 .btn:active, .btn.active {
