@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="008e4381-4e4a-463d-9edb-0b8b770a73a6" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db_lr.sql.zip" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Jibontori.iml" afterPath="$PROJECT_DIR$/.idea/Jibontori.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/User.php" afterPath="$PROJECT_DIR$/lib/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profile.php" afterPath="$PROJECT_DIR$/profile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search.php" afterPath="$PROJECT_DIR$/search.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/userhome.php" afterPath="$PROJECT_DIR$/userhome.php" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
@@ -31,11 +28,11 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.038462">
-              <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+            <state vertical-scroll-proportion="-158.53847">
+              <caret line="337" column="23" selection-start-line="337" selection-start-column="23" selection-end-line="337" selection-end-column="23" />
               <folding>
-                <marker date="1487477274168" expanded="true" signature="1210:1363" placeholder="..." />
-                <marker date="1487477274168" expanded="true" signature="1303:1331" placeholder="..." />
+                <marker date="1487603980763" expanded="true" signature="1210:1363" placeholder="..." />
+                <marker date="1487603980763" expanded="true" signature="1303:1331" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -44,39 +41,36 @@
       <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.384615">
-              <caret line="263" column="24" selection-start-line="262" selection-start-column="12" selection-end-line="263" selection-end-column="24" />
+            <state vertical-scroll-proportion="-5.5">
+              <caret line="408" column="38" selection-start-line="408" selection-start-column="38" selection-end-line="408" selection-end-column="38" />
               <folding>
-                <marker date="1487594898137" expanded="true" signature="2817:2960" placeholder="INSERT INTO tbl_user... " />
-                <marker date="1487594898137" expanded="true" signature="3492:3581" placeholder="INSERT INTO user_info... " />
-                <marker date="1487594898137" expanded="true" signature="4230:4286" placeholder="SELECT usern... tbl_user" />
-                <marker date="1487594898137" expanded="true" signature="4587:4634" placeholder="SELECT email... tbl_user" />
-                <marker date="1487594898137" expanded="true" signature="4942:5018" placeholder="SELECT * fro... tbl_user" />
-                <marker date="1487594898137" expanded="true" signature="5543:5558" placeholder="..." />
-                <marker date="1487594898137" expanded="true" signature="5975:5990" placeholder="..." />
-                <marker date="1487594898137" expanded="true" signature="6687:6702" placeholder="..." />
-                <marker date="1487594898137" expanded="true" signature="6884:6925" placeholder="SELECT * fro... tbl_user" />
-                <marker date="1487594898137" expanded="true" signature="7137:7168" placeholder="SELECT * fro... user_info" />
-                <marker date="1487594898137" expanded="true" signature="7137:7174" placeholder="SELECT pro_v... user_info" />
-                <marker date="1487594898137" expanded="true" signature="7137:7185" placeholder="SELECT pro_v... user_info" />
-                <marker date="1487594898137" expanded="true" signature="7137:7186" placeholder="SELECT pro_v... user_info" />
-                <marker date="1487594898137" expanded="true" signature="7137:7195" placeholder="SELECT pro_v... user_info" />
-                <marker date="1487594898137" expanded="true" signature="7488:7533" placeholder="SELECT * fro... tbl_user" />
-                <marker date="1487594898137" expanded="true" signature="10477:10713" placeholder="UPDATE tbl_u... " />
-                <marker date="1487594898137" expanded="true" signature="10477:10781" placeholder="UPDATE tbl_u... " />
-                <marker date="1487594898137" expanded="true" signature="11750:11819" placeholder="SELECT passw... tbl_user" />
-                <marker date="1487594898137" expanded="true" signature="12895:12982" placeholder="UPDATE tbl_u... " />
-                <marker date="1487594898137" expanded="true" signature="13560:13614" placeholder="SELECT * fro... tbl_user" />
-                <marker date="1487594898137" expanded="true" signature="13862:13922" placeholder="DELETE from " />
+                <marker date="1487603467671" expanded="true" signature="3024:3167" placeholder="INSERT INTO tbl_user... " />
+                <marker date="1487603467671" expanded="true" signature="3699:3788" placeholder="INSERT INTO user_info... " />
+                <marker date="1487603467671" expanded="true" signature="4437:4493" placeholder="SELECT usern... tbl_user" />
+                <marker date="1487603467671" expanded="true" signature="4794:4841" placeholder="SELECT email... tbl_user" />
+                <marker date="1487603467671" expanded="true" signature="5149:5225" placeholder="SELECT * fro... tbl_user" />
+                <marker date="1487603467671" expanded="true" signature="5750:5765" placeholder="..." />
+                <marker date="1487603467671" expanded="true" signature="6164:6179" placeholder="..." />
+                <marker date="1487603467671" expanded="true" signature="6858:6873" placeholder="..." />
+                <marker date="1487603467671" expanded="true" signature="7037:7078" placeholder="SELECT * fro... tbl_user" />
+                <marker date="1487603467671" expanded="true" signature="7290:7348" placeholder="SELECT pro_v... user_info" />
+                <marker date="1487603467671" expanded="true" signature="7641:7686" placeholder="SELECT * fro... tbl_user" />
+                <marker date="1487603467671" expanded="true" signature="10630:10934" placeholder="UPDATE tbl_u... " />
+                <marker date="1487603467671" expanded="true" signature="11903:11972" placeholder="SELECT passw... tbl_user" />
+                <marker date="1487603467671" expanded="true" signature="13048:13135" placeholder="UPDATE tbl_u... " />
+                <marker date="1487603467671" expanded="true" signature="13713:13767" placeholder="SELECT * fro... tbl_user" />
+                <marker date="1487603467671" expanded="true" signature="14015:14075" placeholder="DELETE from " />
+                <marker date="1487603467671" expanded="true" signature="14362:14391" placeholder="select count... tbl_user" />
+                <marker date="1487603467671" expanded="true" signature="14519:14576" placeholder="SELECT * fro... tbl_user" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="search.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.0017953">
+            <state vertical-scroll-proportion="-20.923077">
               <caret line="70" column="70" selection-start-line="70" selection-start-column="70" selection-end-line="70" selection-end-column="70" />
               <folding />
             </state>
@@ -86,11 +80,9 @@
       <file leaf-file-name="profile.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.384615">
+            <state vertical-scroll-proportion="-0.6923077">
               <caret line="144" column="40" selection-start-line="144" selection-start-column="40" selection-end-line="144" selection-end-column="40" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -108,21 +100,20 @@
       <file leaf-file-name="Session.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/Session.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-12.461538">
               <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="userhome.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="userhome.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/userhome.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.1153846">
-              <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.51705563">
+              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
               <folding>
-                <element signature="e#112#343#0#PHP" expanded="true" />
-                <element signature="e#649#774#0#PHP" expanded="true" />
+                <element signature="e#995#1120#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -131,7 +122,7 @@
       <file leaf-file-name="register.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="29.076923">
+            <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -155,11 +146,11 @@
         <option value="$PROJECT_DIR$/lib/Session.php" />
         <option value="$PROJECT_DIR$/phpmailer/contactUs.php" />
         <option value="$PROJECT_DIR$/assets/css/main.css" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/userhome.php" />
-        <option value="$PROJECT_DIR$/lib/User.php" />
         <option value="$PROJECT_DIR$/profile.php" />
         <option value="$PROJECT_DIR$/search.php" />
+        <option value="$PROJECT_DIR$/lib/User.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/userhome.php" />
       </list>
     </option>
   </component>
@@ -203,7 +194,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -224,6 +214,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -231,116 +222,6 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../blood" />
     <property name="js.eslint.eslintPackage" value="" />
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/User.php</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -426,10 +307,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.098335855" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09984872" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -439,7 +321,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.49707174" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -479,27 +360,24 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="352" column="24" selection-start-line="352" selection-start-column="24" selection-end-line="352" selection-end-column="24" />
           <folding>
-            <marker date="1487594898137" expanded="true" signature="2817:2960" placeholder="INSERT INTO tbl_user... " />
-            <marker date="1487594898137" expanded="true" signature="3492:3581" placeholder="INSERT INTO user_info... " />
-            <marker date="1487594898137" expanded="true" signature="4230:4286" placeholder="SELECT usern... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="4587:4634" placeholder="SELECT email... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="4942:5018" placeholder="SELECT * fro... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="5543:5558" placeholder="..." />
-            <marker date="1487594898137" expanded="true" signature="5975:5990" placeholder="..." />
-            <marker date="1487594898137" expanded="true" signature="6687:6702" placeholder="..." />
-            <marker date="1487594898137" expanded="true" signature="6884:6925" placeholder="SELECT * fro... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="7137:7168" placeholder="SELECT * fro... user_info" />
-            <marker date="1487594898137" expanded="true" signature="7137:7174" placeholder="SELECT pro_v... user_info" />
-            <marker date="1487594898137" expanded="true" signature="7137:7185" placeholder="SELECT pro_v... user_info" />
-            <marker date="1487594898137" expanded="true" signature="7137:7186" placeholder="SELECT pro_v... user_info" />
-            <marker date="1487594898137" expanded="true" signature="7137:7195" placeholder="SELECT pro_v... user_info" />
-            <marker date="1487594898137" expanded="true" signature="7488:7533" placeholder="SELECT * fro... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="10477:10713" placeholder="UPDATE tbl_u... " />
-            <marker date="1487594898137" expanded="true" signature="10477:10781" placeholder="UPDATE tbl_u... " />
-            <marker date="1487594898137" expanded="true" signature="11750:11819" placeholder="SELECT passw... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="12895:12982" placeholder="UPDATE tbl_u... " />
-            <marker date="1487594898137" expanded="true" signature="13560:13614" placeholder="SELECT * fro... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="13862:13922" placeholder="DELETE from " />
+            <marker date="1487603467671" expanded="true" signature="3024:3167" placeholder="INSERT INTO tbl_user... " />
+            <marker date="1487603467671" expanded="true" signature="3699:3788" placeholder="INSERT INTO user_info... " />
+            <marker date="1487603467671" expanded="true" signature="4437:4493" placeholder="SELECT usern... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="4794:4841" placeholder="SELECT email... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="5149:5225" placeholder="SELECT * fro... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="5750:5765" placeholder="..." />
+            <marker date="1487603467671" expanded="true" signature="6164:6179" placeholder="..." />
+            <marker date="1487603467671" expanded="true" signature="6858:6873" placeholder="..." />
+            <marker date="1487603467671" expanded="true" signature="7037:7078" placeholder="SELECT * fro... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="7290:7348" placeholder="SELECT pro_v... user_info" />
+            <marker date="1487603467671" expanded="true" signature="7641:7686" placeholder="SELECT * fro... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="10630:10934" placeholder="UPDATE tbl_u... " />
+            <marker date="1487603467671" expanded="true" signature="11903:11972" placeholder="SELECT passw... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="13048:13135" placeholder="UPDATE tbl_u... " />
+            <marker date="1487603467671" expanded="true" signature="13713:13767" placeholder="SELECT * fro... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="14015:14075" placeholder="DELETE from " />
+            <marker date="1487603467671" expanded="true" signature="14362:14391" placeholder="select count... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="14519:14576" placeholder="SELECT * fro... tbl_user" />
           </folding>
         </state>
       </provider>
@@ -516,9 +394,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -543,8 +419,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#112#343#0#PHP" expanded="true" />
-            <element signature="e#649#774#0#PHP" expanded="true" />
+            <element signature="e#995#1120#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -562,8 +437,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1487477274168" expanded="true" signature="1210:1363" placeholder="..." />
-            <marker date="1487477274168" expanded="true" signature="1303:1331" placeholder="..." />
+            <marker date="1487603980763" expanded="true" signature="1210:1363" placeholder="..." />
+            <marker date="1487603980763" expanded="true" signature="1303:1331" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -573,27 +448,24 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="166" column="69" selection-start-line="166" selection-start-column="69" selection-end-line="166" selection-end-column="69" />
           <folding>
-            <marker date="1487594898137" expanded="true" signature="2817:2960" placeholder="INSERT INTO tbl_user... " />
-            <marker date="1487594898137" expanded="true" signature="3492:3581" placeholder="INSERT INTO user_info... " />
-            <marker date="1487594898137" expanded="true" signature="4230:4286" placeholder="SELECT usern... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="4587:4634" placeholder="SELECT email... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="4942:5018" placeholder="SELECT * fro... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="5543:5558" placeholder="..." />
-            <marker date="1487594898137" expanded="true" signature="5975:5990" placeholder="..." />
-            <marker date="1487594898137" expanded="true" signature="6687:6702" placeholder="..." />
-            <marker date="1487594898137" expanded="true" signature="6884:6925" placeholder="SELECT * fro... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="7137:7168" placeholder="SELECT * fro... user_info" />
-            <marker date="1487594898137" expanded="true" signature="7137:7174" placeholder="SELECT pro_v... user_info" />
-            <marker date="1487594898137" expanded="true" signature="7137:7185" placeholder="SELECT pro_v... user_info" />
-            <marker date="1487594898137" expanded="true" signature="7137:7186" placeholder="SELECT pro_v... user_info" />
-            <marker date="1487594898137" expanded="true" signature="7137:7195" placeholder="SELECT pro_v... user_info" />
-            <marker date="1487594898137" expanded="true" signature="7488:7533" placeholder="SELECT * fro... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="10477:10713" placeholder="UPDATE tbl_u... " />
-            <marker date="1487594898137" expanded="true" signature="10477:10781" placeholder="UPDATE tbl_u... " />
-            <marker date="1487594898137" expanded="true" signature="11750:11819" placeholder="SELECT passw... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="12895:12982" placeholder="UPDATE tbl_u... " />
-            <marker date="1487594898137" expanded="true" signature="13560:13614" placeholder="SELECT * fro... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="13862:13922" placeholder="DELETE from " />
+            <marker date="1487603467671" expanded="true" signature="3024:3167" placeholder="INSERT INTO tbl_user... " />
+            <marker date="1487603467671" expanded="true" signature="3699:3788" placeholder="INSERT INTO user_info... " />
+            <marker date="1487603467671" expanded="true" signature="4437:4493" placeholder="SELECT usern... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="4794:4841" placeholder="SELECT email... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="5149:5225" placeholder="SELECT * fro... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="5750:5765" placeholder="..." />
+            <marker date="1487603467671" expanded="true" signature="6164:6179" placeholder="..." />
+            <marker date="1487603467671" expanded="true" signature="6858:6873" placeholder="..." />
+            <marker date="1487603467671" expanded="true" signature="7037:7078" placeholder="SELECT * fro... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="7290:7348" placeholder="SELECT pro_v... user_info" />
+            <marker date="1487603467671" expanded="true" signature="7641:7686" placeholder="SELECT * fro... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="10630:10934" placeholder="UPDATE tbl_u... " />
+            <marker date="1487603467671" expanded="true" signature="11903:11972" placeholder="SELECT passw... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="13048:13135" placeholder="UPDATE tbl_u... " />
+            <marker date="1487603467671" expanded="true" signature="13713:13767" placeholder="SELECT * fro... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="14015:14075" placeholder="DELETE from " />
+            <marker date="1487603467671" expanded="true" signature="14362:14391" placeholder="select count... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="14519:14576" placeholder="SELECT * fro... tbl_user" />
           </folding>
         </state>
       </provider>
@@ -626,8 +498,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#112#343#0#PHP" expanded="true" />
-            <element signature="e#649#774#0#PHP" expanded="true" />
+            <element signature="e#995#1120#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -645,8 +516,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1487477274168" expanded="true" signature="1210:1363" placeholder="..." />
-            <marker date="1487477274168" expanded="true" signature="1303:1331" placeholder="..." />
+            <marker date="1487603980763" expanded="true" signature="1210:1363" placeholder="..." />
+            <marker date="1487603980763" expanded="true" signature="1303:1331" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -656,27 +527,24 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1487594898137" expanded="true" signature="2817:2960" placeholder="INSERT INTO tbl_user... " />
-            <marker date="1487594898137" expanded="true" signature="3492:3581" placeholder="INSERT INTO user_info... " />
-            <marker date="1487594898137" expanded="true" signature="4230:4286" placeholder="SELECT usern... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="4587:4634" placeholder="SELECT email... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="4942:5018" placeholder="SELECT * fro... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="5543:5558" placeholder="..." />
-            <marker date="1487594898137" expanded="true" signature="5975:5990" placeholder="..." />
-            <marker date="1487594898137" expanded="true" signature="6687:6702" placeholder="..." />
-            <marker date="1487594898137" expanded="true" signature="6884:6925" placeholder="SELECT * fro... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="7137:7168" placeholder="SELECT * fro... user_info" />
-            <marker date="1487594898137" expanded="true" signature="7137:7174" placeholder="SELECT pro_v... user_info" />
-            <marker date="1487594898137" expanded="true" signature="7137:7185" placeholder="SELECT pro_v... user_info" />
-            <marker date="1487594898137" expanded="true" signature="7137:7186" placeholder="SELECT pro_v... user_info" />
-            <marker date="1487594898137" expanded="true" signature="7137:7195" placeholder="SELECT pro_v... user_info" />
-            <marker date="1487594898137" expanded="true" signature="7488:7533" placeholder="SELECT * fro... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="10477:10713" placeholder="UPDATE tbl_u... " />
-            <marker date="1487594898137" expanded="true" signature="10477:10781" placeholder="UPDATE tbl_u... " />
-            <marker date="1487594898137" expanded="true" signature="11750:11819" placeholder="SELECT passw... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="12895:12982" placeholder="UPDATE tbl_u... " />
-            <marker date="1487594898137" expanded="true" signature="13560:13614" placeholder="SELECT * fro... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="13862:13922" placeholder="DELETE from " />
+            <marker date="1487603467671" expanded="true" signature="3024:3167" placeholder="INSERT INTO tbl_user... " />
+            <marker date="1487603467671" expanded="true" signature="3699:3788" placeholder="INSERT INTO user_info... " />
+            <marker date="1487603467671" expanded="true" signature="4437:4493" placeholder="SELECT usern... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="4794:4841" placeholder="SELECT email... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="5149:5225" placeholder="SELECT * fro... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="5750:5765" placeholder="..." />
+            <marker date="1487603467671" expanded="true" signature="6164:6179" placeholder="..." />
+            <marker date="1487603467671" expanded="true" signature="6858:6873" placeholder="..." />
+            <marker date="1487603467671" expanded="true" signature="7037:7078" placeholder="SELECT * fro... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="7290:7348" placeholder="SELECT pro_v... user_info" />
+            <marker date="1487603467671" expanded="true" signature="7641:7686" placeholder="SELECT * fro... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="10630:10934" placeholder="UPDATE tbl_u... " />
+            <marker date="1487603467671" expanded="true" signature="11903:11972" placeholder="SELECT passw... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="13048:13135" placeholder="UPDATE tbl_u... " />
+            <marker date="1487603467671" expanded="true" signature="13713:13767" placeholder="SELECT * fro... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="14015:14075" placeholder="DELETE from " />
+            <marker date="1487603467671" expanded="true" signature="14362:14391" placeholder="select count... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="14519:14576" placeholder="SELECT * fro... tbl_user" />
           </folding>
         </state>
       </provider>
@@ -702,8 +570,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#112#343#0#PHP" expanded="true" />
-            <element signature="e#649#774#0#PHP" expanded="true" />
+            <element signature="e#995#1120#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -721,8 +588,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
           <folding>
-            <marker date="1487477274168" expanded="true" signature="1210:1363" placeholder="..." />
-            <marker date="1487477274168" expanded="true" signature="1303:1331" placeholder="..." />
+            <marker date="1487603980763" expanded="true" signature="1210:1363" placeholder="..." />
+            <marker date="1487603980763" expanded="true" signature="1303:1331" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -739,27 +606,24 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1487594898137" expanded="true" signature="2817:2960" placeholder="INSERT INTO tbl_user... " />
-            <marker date="1487594898137" expanded="true" signature="3492:3581" placeholder="INSERT INTO user_info... " />
-            <marker date="1487594898137" expanded="true" signature="4230:4286" placeholder="SELECT usern... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="4587:4634" placeholder="SELECT email... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="4942:5018" placeholder="SELECT * fro... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="5543:5558" placeholder="..." />
-            <marker date="1487594898137" expanded="true" signature="5975:5990" placeholder="..." />
-            <marker date="1487594898137" expanded="true" signature="6687:6702" placeholder="..." />
-            <marker date="1487594898137" expanded="true" signature="6884:6925" placeholder="SELECT * fro... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="7137:7168" placeholder="SELECT * fro... user_info" />
-            <marker date="1487594898137" expanded="true" signature="7137:7174" placeholder="SELECT pro_v... user_info" />
-            <marker date="1487594898137" expanded="true" signature="7137:7185" placeholder="SELECT pro_v... user_info" />
-            <marker date="1487594898137" expanded="true" signature="7137:7186" placeholder="SELECT pro_v... user_info" />
-            <marker date="1487594898137" expanded="true" signature="7137:7195" placeholder="SELECT pro_v... user_info" />
-            <marker date="1487594898137" expanded="true" signature="7488:7533" placeholder="SELECT * fro... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="10477:10713" placeholder="UPDATE tbl_u... " />
-            <marker date="1487594898137" expanded="true" signature="10477:10781" placeholder="UPDATE tbl_u... " />
-            <marker date="1487594898137" expanded="true" signature="11750:11819" placeholder="SELECT passw... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="12895:12982" placeholder="UPDATE tbl_u... " />
-            <marker date="1487594898137" expanded="true" signature="13560:13614" placeholder="SELECT * fro... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="13862:13922" placeholder="DELETE from " />
+            <marker date="1487603467671" expanded="true" signature="3024:3167" placeholder="INSERT INTO tbl_user... " />
+            <marker date="1487603467671" expanded="true" signature="3699:3788" placeholder="INSERT INTO user_info... " />
+            <marker date="1487603467671" expanded="true" signature="4437:4493" placeholder="SELECT usern... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="4794:4841" placeholder="SELECT email... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="5149:5225" placeholder="SELECT * fro... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="5750:5765" placeholder="..." />
+            <marker date="1487603467671" expanded="true" signature="6164:6179" placeholder="..." />
+            <marker date="1487603467671" expanded="true" signature="6858:6873" placeholder="..." />
+            <marker date="1487603467671" expanded="true" signature="7037:7078" placeholder="SELECT * fro... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="7290:7348" placeholder="SELECT pro_v... user_info" />
+            <marker date="1487603467671" expanded="true" signature="7641:7686" placeholder="SELECT * fro... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="10630:10934" placeholder="UPDATE tbl_u... " />
+            <marker date="1487603467671" expanded="true" signature="11903:11972" placeholder="SELECT passw... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="13048:13135" placeholder="UPDATE tbl_u... " />
+            <marker date="1487603467671" expanded="true" signature="13713:13767" placeholder="SELECT * fro... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="14015:14075" placeholder="DELETE from " />
+            <marker date="1487603467671" expanded="true" signature="14362:14391" placeholder="select count... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="14519:14576" placeholder="SELECT * fro... tbl_user" />
           </folding>
         </state>
       </provider>
@@ -785,8 +649,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#112#343#0#PHP" expanded="true" />
-            <element signature="e#649#774#0#PHP" expanded="true" />
+            <element signature="e#995#1120#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -804,8 +667,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1487477274168" expanded="true" signature="1210:1363" placeholder="..." />
-            <marker date="1487477274168" expanded="true" signature="1303:1331" placeholder="..." />
+            <marker date="1487603980763" expanded="true" signature="1210:1363" placeholder="..." />
+            <marker date="1487603980763" expanded="true" signature="1303:1331" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -815,27 +678,24 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1487594898137" expanded="true" signature="2817:2960" placeholder="INSERT INTO tbl_user... " />
-            <marker date="1487594898137" expanded="true" signature="3492:3581" placeholder="INSERT INTO user_info... " />
-            <marker date="1487594898137" expanded="true" signature="4230:4286" placeholder="SELECT usern... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="4587:4634" placeholder="SELECT email... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="4942:5018" placeholder="SELECT * fro... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="5543:5558" placeholder="..." />
-            <marker date="1487594898137" expanded="true" signature="5975:5990" placeholder="..." />
-            <marker date="1487594898137" expanded="true" signature="6687:6702" placeholder="..." />
-            <marker date="1487594898137" expanded="true" signature="6884:6925" placeholder="SELECT * fro... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="7137:7168" placeholder="SELECT * fro... user_info" />
-            <marker date="1487594898137" expanded="true" signature="7137:7174" placeholder="SELECT pro_v... user_info" />
-            <marker date="1487594898137" expanded="true" signature="7137:7185" placeholder="SELECT pro_v... user_info" />
-            <marker date="1487594898137" expanded="true" signature="7137:7186" placeholder="SELECT pro_v... user_info" />
-            <marker date="1487594898137" expanded="true" signature="7137:7195" placeholder="SELECT pro_v... user_info" />
-            <marker date="1487594898137" expanded="true" signature="7488:7533" placeholder="SELECT * fro... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="10477:10713" placeholder="UPDATE tbl_u... " />
-            <marker date="1487594898137" expanded="true" signature="10477:10781" placeholder="UPDATE tbl_u... " />
-            <marker date="1487594898137" expanded="true" signature="11750:11819" placeholder="SELECT passw... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="12895:12982" placeholder="UPDATE tbl_u... " />
-            <marker date="1487594898137" expanded="true" signature="13560:13614" placeholder="SELECT * fro... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="13862:13922" placeholder="DELETE from " />
+            <marker date="1487603467671" expanded="true" signature="3024:3167" placeholder="INSERT INTO tbl_user... " />
+            <marker date="1487603467671" expanded="true" signature="3699:3788" placeholder="INSERT INTO user_info... " />
+            <marker date="1487603467671" expanded="true" signature="4437:4493" placeholder="SELECT usern... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="4794:4841" placeholder="SELECT email... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="5149:5225" placeholder="SELECT * fro... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="5750:5765" placeholder="..." />
+            <marker date="1487603467671" expanded="true" signature="6164:6179" placeholder="..." />
+            <marker date="1487603467671" expanded="true" signature="6858:6873" placeholder="..." />
+            <marker date="1487603467671" expanded="true" signature="7037:7078" placeholder="SELECT * fro... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="7290:7348" placeholder="SELECT pro_v... user_info" />
+            <marker date="1487603467671" expanded="true" signature="7641:7686" placeholder="SELECT * fro... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="10630:10934" placeholder="UPDATE tbl_u... " />
+            <marker date="1487603467671" expanded="true" signature="11903:11972" placeholder="SELECT passw... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="13048:13135" placeholder="UPDATE tbl_u... " />
+            <marker date="1487603467671" expanded="true" signature="13713:13767" placeholder="SELECT * fro... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="14015:14075" placeholder="DELETE from " />
+            <marker date="1487603467671" expanded="true" signature="14362:14391" placeholder="select count... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="14519:14576" placeholder="SELECT * fro... tbl_user" />
           </folding>
         </state>
       </provider>
@@ -861,8 +721,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#112#343#0#PHP" expanded="true" />
-            <element signature="e#649#774#0#PHP" expanded="true" />
+            <element signature="e#995#1120#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -880,8 +739,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="82" column="78" selection-start-line="82" selection-start-column="78" selection-end-line="82" selection-end-column="78" />
           <folding>
-            <marker date="1487477274168" expanded="true" signature="1210:1363" placeholder="..." />
-            <marker date="1487477274168" expanded="true" signature="1303:1331" placeholder="..." />
+            <marker date="1487603980763" expanded="true" signature="1210:1363" placeholder="..." />
+            <marker date="1487603980763" expanded="true" signature="1303:1331" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -891,27 +750,24 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1487594898137" expanded="true" signature="2817:2960" placeholder="INSERT INTO tbl_user... " />
-            <marker date="1487594898137" expanded="true" signature="3492:3581" placeholder="INSERT INTO user_info... " />
-            <marker date="1487594898137" expanded="true" signature="4230:4286" placeholder="SELECT usern... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="4587:4634" placeholder="SELECT email... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="4942:5018" placeholder="SELECT * fro... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="5543:5558" placeholder="..." />
-            <marker date="1487594898137" expanded="true" signature="5975:5990" placeholder="..." />
-            <marker date="1487594898137" expanded="true" signature="6687:6702" placeholder="..." />
-            <marker date="1487594898137" expanded="true" signature="6884:6925" placeholder="SELECT * fro... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="7137:7168" placeholder="SELECT * fro... user_info" />
-            <marker date="1487594898137" expanded="true" signature="7137:7174" placeholder="SELECT pro_v... user_info" />
-            <marker date="1487594898137" expanded="true" signature="7137:7185" placeholder="SELECT pro_v... user_info" />
-            <marker date="1487594898137" expanded="true" signature="7137:7186" placeholder="SELECT pro_v... user_info" />
-            <marker date="1487594898137" expanded="true" signature="7137:7195" placeholder="SELECT pro_v... user_info" />
-            <marker date="1487594898137" expanded="true" signature="7488:7533" placeholder="SELECT * fro... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="10477:10713" placeholder="UPDATE tbl_u... " />
-            <marker date="1487594898137" expanded="true" signature="10477:10781" placeholder="UPDATE tbl_u... " />
-            <marker date="1487594898137" expanded="true" signature="11750:11819" placeholder="SELECT passw... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="12895:12982" placeholder="UPDATE tbl_u... " />
-            <marker date="1487594898137" expanded="true" signature="13560:13614" placeholder="SELECT * fro... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="13862:13922" placeholder="DELETE from " />
+            <marker date="1487603467671" expanded="true" signature="3024:3167" placeholder="INSERT INTO tbl_user... " />
+            <marker date="1487603467671" expanded="true" signature="3699:3788" placeholder="INSERT INTO user_info... " />
+            <marker date="1487603467671" expanded="true" signature="4437:4493" placeholder="SELECT usern... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="4794:4841" placeholder="SELECT email... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="5149:5225" placeholder="SELECT * fro... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="5750:5765" placeholder="..." />
+            <marker date="1487603467671" expanded="true" signature="6164:6179" placeholder="..." />
+            <marker date="1487603467671" expanded="true" signature="6858:6873" placeholder="..." />
+            <marker date="1487603467671" expanded="true" signature="7037:7078" placeholder="SELECT * fro... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="7290:7348" placeholder="SELECT pro_v... user_info" />
+            <marker date="1487603467671" expanded="true" signature="7641:7686" placeholder="SELECT * fro... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="10630:10934" placeholder="UPDATE tbl_u... " />
+            <marker date="1487603467671" expanded="true" signature="11903:11972" placeholder="SELECT passw... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="13048:13135" placeholder="UPDATE tbl_u... " />
+            <marker date="1487603467671" expanded="true" signature="13713:13767" placeholder="SELECT * fro... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="14015:14075" placeholder="DELETE from " />
+            <marker date="1487603467671" expanded="true" signature="14362:14391" placeholder="select count... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="14519:14576" placeholder="SELECT * fro... tbl_user" />
           </folding>
         </state>
       </provider>
@@ -937,8 +793,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#112#343#0#PHP" expanded="true" />
-            <element signature="e#649#774#0#PHP" expanded="true" />
+            <element signature="e#995#1120#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -956,8 +811,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
           <folding>
-            <marker date="1487477274168" expanded="true" signature="1210:1363" placeholder="..." />
-            <marker date="1487477274168" expanded="true" signature="1303:1331" placeholder="..." />
+            <marker date="1487603980763" expanded="true" signature="1210:1363" placeholder="..." />
+            <marker date="1487603980763" expanded="true" signature="1303:1331" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -967,8 +822,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1487477274168" expanded="true" signature="1210:1363" placeholder="..." />
-            <marker date="1487477274168" expanded="true" signature="1303:1331" placeholder="..." />
+            <marker date="1487603980763" expanded="true" signature="1210:1363" placeholder="..." />
+            <marker date="1487603980763" expanded="true" signature="1303:1331" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -995,89 +850,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Session.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.038462">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding>
-            <marker date="1487477274168" expanded="true" signature="1210:1363" placeholder="..." />
-            <marker date="1487477274168" expanded="true" signature="1303:1331" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="29.076923">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/userhome.php">
+    <entry file="file://$PROJECT_DIR$/search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.1153846">
-          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding>
-            <element signature="e#112#343#0#PHP" expanded="true" />
-            <element signature="e#649#774#0#PHP" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-20.923077">
+          <caret line="70" column="70" selection-start-line="70" selection-start-column="70" selection-end-line="70" selection-end-column="70" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/User.php">
+    <entry file="file://$PROJECT_DIR$/lib/Session.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.384615">
-          <caret line="263" column="24" selection-start-line="262" selection-start-column="12" selection-end-line="263" selection-end-column="24" />
-          <folding>
-            <marker date="1487594898137" expanded="true" signature="2817:2960" placeholder="INSERT INTO tbl_user... " />
-            <marker date="1487594898137" expanded="true" signature="3492:3581" placeholder="INSERT INTO user_info... " />
-            <marker date="1487594898137" expanded="true" signature="4230:4286" placeholder="SELECT usern... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="4587:4634" placeholder="SELECT email... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="4942:5018" placeholder="SELECT * fro... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="5543:5558" placeholder="..." />
-            <marker date="1487594898137" expanded="true" signature="5975:5990" placeholder="..." />
-            <marker date="1487594898137" expanded="true" signature="6687:6702" placeholder="..." />
-            <marker date="1487594898137" expanded="true" signature="6884:6925" placeholder="SELECT * fro... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="7137:7168" placeholder="SELECT * fro... user_info" />
-            <marker date="1487594898137" expanded="true" signature="7137:7174" placeholder="SELECT pro_v... user_info" />
-            <marker date="1487594898137" expanded="true" signature="7137:7185" placeholder="SELECT pro_v... user_info" />
-            <marker date="1487594898137" expanded="true" signature="7137:7186" placeholder="SELECT pro_v... user_info" />
-            <marker date="1487594898137" expanded="true" signature="7137:7195" placeholder="SELECT pro_v... user_info" />
-            <marker date="1487594898137" expanded="true" signature="7488:7533" placeholder="SELECT * fro... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="10477:10713" placeholder="UPDATE tbl_u... " />
-            <marker date="1487594898137" expanded="true" signature="10477:10781" placeholder="UPDATE tbl_u... " />
-            <marker date="1487594898137" expanded="true" signature="11750:11819" placeholder="SELECT passw... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="12895:12982" placeholder="UPDATE tbl_u... " />
-            <marker date="1487594898137" expanded="true" signature="13560:13614" placeholder="SELECT * fro... tbl_user" />
-            <marker date="1487594898137" expanded="true" signature="13862:13922" placeholder="DELETE from " />
-          </folding>
+        <state vertical-scroll-proportion="-12.461538">
+          <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/profile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.384615">
+        <state vertical-scroll-proportion="-0.6923077">
           <caret line="144" column="40" selection-start-line="144" selection-start-column="40" selection-end-line="144" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.5">
+          <caret line="408" column="38" selection-start-line="408" selection-start-column="38" selection-end-line="408" selection-end-column="38" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <marker date="1487603467671" expanded="true" signature="3024:3167" placeholder="INSERT INTO tbl_user... " />
+            <marker date="1487603467671" expanded="true" signature="3699:3788" placeholder="INSERT INTO user_info... " />
+            <marker date="1487603467671" expanded="true" signature="4437:4493" placeholder="SELECT usern... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="4794:4841" placeholder="SELECT email... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="5149:5225" placeholder="SELECT * fro... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="5750:5765" placeholder="..." />
+            <marker date="1487603467671" expanded="true" signature="6164:6179" placeholder="..." />
+            <marker date="1487603467671" expanded="true" signature="6858:6873" placeholder="..." />
+            <marker date="1487603467671" expanded="true" signature="7037:7078" placeholder="SELECT * fro... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="7290:7348" placeholder="SELECT pro_v... user_info" />
+            <marker date="1487603467671" expanded="true" signature="7641:7686" placeholder="SELECT * fro... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="10630:10934" placeholder="UPDATE tbl_u... " />
+            <marker date="1487603467671" expanded="true" signature="11903:11972" placeholder="SELECT passw... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="13048:13135" placeholder="UPDATE tbl_u... " />
+            <marker date="1487603467671" expanded="true" signature="13713:13767" placeholder="SELECT * fro... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="14015:14075" placeholder="DELETE from " />
+            <marker date="1487603467671" expanded="true" signature="14362:14391" placeholder="select count... tbl_user" />
+            <marker date="1487603467671" expanded="true" signature="14519:14576" placeholder="SELECT * fro... tbl_user" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0017953">
-          <caret line="70" column="70" selection-start-line="70" selection-start-column="70" selection-end-line="70" selection-end-column="70" />
-          <folding />
+        <state vertical-scroll-proportion="-158.53847">
+          <caret line="337" column="23" selection-start-line="337" selection-start-column="23" selection-end-line="337" selection-end-column="23" />
+          <folding>
+            <marker date="1487603980763" expanded="true" signature="1210:1363" placeholder="..." />
+            <marker date="1487603980763" expanded="true" signature="1303:1331" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/userhome.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51705563">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding>
+            <element signature="e#995#1120#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

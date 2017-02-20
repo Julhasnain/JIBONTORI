@@ -334,6 +334,11 @@ include("ContactMail.php");
                     <div id="success"></div>
                     <button type="submit" name="submit" class="btn btn-default">Send Message</button>
 
+                    <?php
+                    if(isset($_POST['submit']))
+                    echo "mail sent";
+                    ?>
+
                 </form>
                 <div class="social">
                     <ul>

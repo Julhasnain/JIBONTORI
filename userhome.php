@@ -15,11 +15,21 @@ $user = new User();
 
     }
 }
-
 */
 ?>
 
-
+<?php
+/*$perPage = 3;
+if (isset($_GET['page'])) {
+    $page = $_GET['page'];
+} else {
+    $page = 1;
+}
+$startFrom = ($page-1)*$perPage;*/
+$page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+$perPage = isset($_GET['per-page']) && $_GET['per-page'] <= 50 ? (int)$_GET['per-page'] : 10;
+$start = ($page > 1) ? ($page * $perPage) - $perPage : 0;
+?>
 
 <?php
 $loginmsg = Session::get("loginmsg");
@@ -44,7 +54,7 @@ Session::set("loginmsg", null);
     <div class="panel-body">
         <table class="table table-striped">
             <tr>
-                <th width="20%">Serial</th>
+                <!--<th width="20%">Serial</th>-->
                 <th width="20%">Name</th>
                 <th width="20%">Email</th>
                 <th width="20%">Blood Group</th>
@@ -59,6 +69,12 @@ Session::set("loginmsg", null);
                 $adminValue = $admin->pro_value;
                 echo $adminValue;
             }*/
+
+            $total = $user->totalRows();
+            // echo $total;
+            $pages = ceil($total / $perPage);
+            // echo $pages;
+            $userdata = $user->getUserDataForPage($start, $perPage);
 
             if ($userdata) {
                 $i = 1;
@@ -84,6 +100,13 @@ Session::set("loginmsg", null);
             }
             ?>
         </table>
+        <ul class="pagination pull-right">
+            <?php
+
+            for ($x = 1; $x <= $pages; $x++) { ?>
+                <li class=""><a href="?page=<?php echo $x;?>"><?php echo $x;?></a></li>
+            <?php } ?>
+        </ul>
     </div>
 
 </div>

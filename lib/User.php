@@ -400,6 +400,22 @@ class User
         return $result;
     }
 
+    public function totalRows()
+    {
+        $nRows = $this->db->pdo->query('select count(*) from tbl_user')->fetchColumn();
+        return $nRows;
+    }
+
+    public function getUserDataForPage($start, $perPage)
+    {
+        $sql = "SELECT * from tbl_user  ORDER BY name ASC Limit {$start},{$perPage}";
+
+        $query = $this->db->pdo->prepare($sql);
+        $query->execute();
+        $result = $query->fetchAll();
+        //var_dump($result);
+        return $result;
+    }
 
 
 
