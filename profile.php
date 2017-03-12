@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['delete'])) {
     //echo $deleteUser;
     // echo $userid;
     //Session::destroy();
-    header("Location: userhome.php");
+    header("Location: userhome.php?page=1");
 }
 
 ?>

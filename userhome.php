@@ -74,20 +74,19 @@ Session::set("loginmsg", null);
             // echo $total;
             $pages = ceil($total / $perPage);
             // echo $pages;
+
+            $y= $_GET['page'];
+            $z = $y*$perPage-$perPage+1;
             $userdata = $user->getUserDataForPage($start, $perPage);
-
             if ($userdata) {
-                $i = 1;
                 foreach ($userdata as $sdata) {
-
                     ?>
                     <tr class="default">
-                        <td><?php echo $i++; ?></td>
+                        <td><?php echo $z++; ?></td>
                         <td><?php echo $sdata['name']; ?></td>
                         <td><?php echo $sdata['email']; ?></td>
                         <td><?php echo $sdata['blood_group']; ?></td>
                         <td><a class="btn btn-info" href="profile.php?id=<?php echo $sdata['id']; ?>">View</a></td>
-
                     </tr>
                     <?php
                 }
@@ -103,7 +102,8 @@ Session::set("loginmsg", null);
         <ul class="pagination pull-right">
             <?php
 
-            for ($x = 1; $x <= $pages; $x++) { ?>
+            for ($x = 1; $x <= $pages; $x++) {
+                ?>
                 <li class=""><a href="?page=<?php echo $x;?>"><?php echo $x;?></a></li>
             <?php } ?>
         </ul>

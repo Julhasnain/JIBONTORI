@@ -37,13 +37,13 @@ class Session
     public static function checkLogin()
     {
         if (self::get("login") == true) {
-            header("Location: userhome.php");
+            header("Location: userhome.php?page=1");
         }
     }
     public static function checkRegister()
     {
         if (self::get("register") == true)
-            header("Location: userhome.php");
+            header("Location: userhome.php?page=1");
         //echo "YOo";
     }
 

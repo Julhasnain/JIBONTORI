@@ -75,7 +75,7 @@ if (isset($_GET['action']) && $_GET['action'] == "logout") {
                         </div>
                     </form>
 
-                    <li><a href="userhome.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                    <li><a href="userhome.php?page=1"><span class="glyphicon glyphicon-home"></span> Home</a></li>
                     <li><a href="profile.php?id=<?php echo $id; ?>"><span class="glyphicon glyphicon-user"></span>
                             Profile</a></li>
 

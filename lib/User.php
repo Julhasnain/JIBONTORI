@@ -179,7 +179,7 @@ class User
             Session::set("name", $result->name);
             Session::set("username", $result->username);
             Session::set("loginmsg", "<div class='alert alert-success'>Welcome! <strong>$result->name</strong></div>");
-            header("Location: userhome.php");
+            header("Location: userhome.php?page=1");
         } else {
             $msg = "<div class='text-danger' style=\"white-space:pre\"><h4>Invalid Password!!                          </h4></div>";
 
