@@ -106,10 +106,23 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['delete'])) {
                         <label for="Blood_Group">Blood Group</label>
                         <?php
                         $sesId = Session::get("id");
-                        if ($sesId == $userid || $adminValue ==9) {
+                        if ( $adminValue ==9 || $userdata->blood_group == "X") {
+                            //if($userdata->blood_group == 'X')
+                                //echo "yoo";
                             ?>
-                            <input type="text" id="blood_group" name="blood_group" class="form-control"
-                                   value="<?php echo strtoupper($userdata->blood_group); ?>">
+                            <select type="text" class="form-control"  name="blood_group">
+                                <!--<option value="" selected="selected"><?php echo "X"?></option>-->
+                                <option value="X">Unknown</option>
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                            </select>
+                                  <!-- value="<?php echo strtoupper($userdata->blood_group); ?>"> -->
                         <?php } else { ?>
                             <input type="text" id="blood_group" name="blood_group" class="form-control"
                                    value="<?php echo strtoupper($userdata->blood_group); ?>" readonly>

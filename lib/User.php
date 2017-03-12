@@ -225,6 +225,7 @@ class User
         $username = $data["username"];
         $email = $data['email'];
         $blood = $data['blood_group'];
+
         $lastDonate = $data['lastDonation1'];
         //echo $lastDonate;
         $age = $data['age'];

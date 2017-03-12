@@ -67,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
 						<option value="AB-">AB-</option>
 						<option value="O+">O+</option>
 						<option value="O-">O-</option>
-                        <option value="X">I don't know</option>
+                        <option value="X">Unknown</option>
 					</select>
                 </div>
 

@@ -63,20 +63,20 @@ Session::set("loginmsg", null);
             <?php
             $user = new User();
             $userdata = $user->getUserData();
-           /* $sesname = Session::get("username");
-            $admin = $user->adminCheck($sesname);
-            if ($admin) {
-                $adminValue = $admin->pro_value;
-                echo $adminValue;
-            }*/
+            /* $sesname = Session::get("username");
+             $admin = $user->adminCheck($sesname);
+             if ($admin) {
+                 $adminValue = $admin->pro_value;
+                 echo $adminValue;
+             }*/
 
             $total = $user->totalRows();
             // echo $total;
             $pages = ceil($total / $perPage);
             // echo $pages;
 
-            $y= $_GET['page'];
-            $z = $y*$perPage-$perPage+1;
+            $y = $_GET['page'];
+            $z = $y * $perPage - $perPage + 1;
             $userdata = $user->getUserDataForPage($start, $perPage);
             if ($userdata) {
                 foreach ($userdata as $sdata) {
@@ -85,7 +85,11 @@ Session::set("loginmsg", null);
                         <td><?php echo $z++; ?></td>
                         <td><?php echo $sdata['name']; ?></td>
                         <td><?php echo $sdata['email']; ?></td>
-                        <td><?php echo $sdata['blood_group']; ?></td>
+                        <td><?php
+                            if ($sdata['blood_group'] == 'X')
+                                echo "Unknown";
+                            else
+                                echo $sdata['blood_group']; ?></td>
                         <td><a class="btn btn-info" href="profile.php?id=<?php echo $sdata['id']; ?>">View</a></td>
                     </tr>
                     <?php
@@ -104,7 +108,7 @@ Session::set("loginmsg", null);
 
             for ($x = 1; $x <= $pages; $x++) {
                 ?>
-                <li class=""><a href="?page=<?php echo $x;?>"><?php echo $x;?></a></li>
+                <li class=""><a href="?page=<?php echo $x; ?>"><?php echo $x; ?></a></li>
             <?php } ?>
         </ul>
     </div>
