@@ -51,9 +51,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['delete'])) {
             $sesname = Session::get("username");
             $admin = $user->adminCheck($sesname);
             //if ($admin) {
-                $adminValue = $admin->pro_value;
-                // echo $adminValue;
-           // }
+            $adminValue = $admin->pro_value;
+            // echo $adminValue;
+            // }
             $userdata = $user->getUserById($userid);
             {
                 ?>
@@ -62,7 +62,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['delete'])) {
                         <label for="name">Full Name</label>
                         <?php
                         $sesId = Session::get("id");
-                        if ($sesId == $userid || $adminValue ==9) {
+                        if ($sesId == $userid || $adminValue == 9) {
                             ?>
                             <input type="text" id="name" name="name" class="form-control"
                                    value="<?php echo $userdata->name; ?>">
@@ -77,7 +77,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['delete'])) {
                         <label for="username">Username</label>
                         <?php
                         $sesId = Session::get("id");
-                        if ($sesId == $userid || $adminValue ==9) {
+                        if ($sesId == $userid || $adminValue == 9) {
                             ?>
                             <input type="text" id="username" name="username" class="form-control"
                                    value="<?php echo $userdata->username; ?>" readonly>
@@ -92,7 +92,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['delete'])) {
                         <label for="email">Email Address</label>
                         <?php
                         $sesId = Session::get("id");
-                        if ($sesId == $userid || $adminValue ==9) {
+                        if ($sesId == $userid || $adminValue == 9) {
                             ?>
                             <input type="text" id="email" name="email" class="form-control"
                                    value="<?php echo $userdata->email; ?>">
@@ -106,12 +106,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['delete'])) {
                         <label for="Blood_Group">Blood Group</label>
                         <?php
                         $sesId = Session::get("id");
-                        if ( $adminValue ==9 || $userdata->blood_group == "X") {
+                        if ($userdata->blood_group == "X") {
                             //if($userdata->blood_group == 'X')
-                                //echo "yoo";
+                            //echo "yoo";
                             ?>
-                            <select type="text" class="form-control"  name="blood_group">
-                                <!--<option value="" selected="selected"><?php echo "X"?></option>-->
+                            <select type="text" class="form-control" name="blood_group">
+                                <!--<option value="" selected="selected"><?php echo "X" ?></option>-->
                                 <option value="X">Unknown</option>
                                 <option value="A+">A+</option>
                                 <option value="A-">A-</option>
@@ -122,7 +122,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['delete'])) {
                                 <option value="O+">O+</option>
                                 <option value="O-">O-</option>
                             </select>
-                                  <!-- value="<?php echo strtoupper($userdata->blood_group); ?>"> -->
+                            <!-- value="<?php echo strtoupper($userdata->blood_group); ?>"> -->
                         <?php } else { ?>
                             <input type="text" id="blood_group" name="blood_group" class="form-control"
                                    value="<?php echo strtoupper($userdata->blood_group); ?>" readonly>
@@ -133,7 +133,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['delete'])) {
                         <label for="Last Donation1">Last Donation(Date)</label>
                         <?php
                         $sesId = Session::get("id");
-                        if ($sesId == $userid || $adminValue ==9) {
+                        if ($sesId == $userid || $adminValue == 9) {
                             ?>
                             <input type="text" id="lastDonation1" name="lastDonation1" class="form-control"
                                    value="<?php echo $userdata->last_donated; ?>" placeholder="dd-mm-yyyy">
@@ -147,27 +147,29 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['delete'])) {
                         <label for="Last Donation2">Last Donation(Days ago)</label>
                         <?php
                         $date1 = new DateTime("$userdata->last_donated");
-                       //echo $date1->format("d-m-Y")."<br>";
+                        //echo $date1->format("d-m-Y")."<br>";
                         $date2 = new DateTime();
                         //echo $date2->format("d-m-Y")."<br>";
-                        $diff = $date1->diff($date2)->days;
+                        $diff = $date1->diff($date2)->format('%r%a');
 
-                        if($date1->format("y") > $date2->format("y"))
-                        {
+
+                        if ($date1->format("y") > $date2->format("y")) {
                             $msg = "<div class='alert alert-danger'><strong>Error! </strong>Date format not valid</div>";
                             return $msg;
                         }
 
-                        //echo $diff;
                         if ($sesId == $userid) {
                             $sesId = Session::get("id");
-
                             ?>
                             <input type="text" id="lastDonation2" name="lastDonation2" class="form-control"
-                                   value="<?php echo $diff; ?>" readonly>
+                                   value="<?php
+
+                                   echo $diff; ?>" readonly>
                         <?php } else { ?>
                             <input type="text" id="lastDonation2" name="lastDonation2" class="form-control"
-                                   value="<?php echo $diff; ?>" readonly>
+                                   value="<?php
+
+                                   echo $diff; ?>" readonly>
                         <?php }
                         ?>
                     </div>
@@ -176,7 +178,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['delete'])) {
                         <label for="Age">Age</label>
                         <?php
                         $sesId = Session::get("id");
-                        if ($sesId == $userid || $adminValue ==9) {
+                        if ($sesId == $userid || $adminValue == 9) {
                             ?>
                             <input type="text" id="age" name="age" class="form-control"
                                    value="<?php echo $userdata->age; ?>">
@@ -190,7 +192,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['delete'])) {
                         <label for="Contact">Contact</label>
                         <?php
                         $sesId = Session::get("id");
-                        if ($sesId == $userid || $adminValue ==9) {
+                        if ($sesId == $userid || $adminValue == 9) {
                             ?>
                             <input type="text" id="contact" name="contact" class="form-control"
                                    value="<?php echo $userdata->contact; ?>">
@@ -213,14 +215,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['delete'])) {
                         ?>
                         <button type="submit" name="update" class="btn btn-info">Update</button>
                         <a class="btn btn-success" href="changepass.php?id=<?php echo $userid; ?>">Change Password</a>
-                        <?php } ?>
+                    <?php } ?>
                     <?php
-                    if($adminValue == 9) { ?>
+                    if ($adminValue == 9) { ?>
                         <form action="" method="post">
                             <button type="submit" name="delete" class="btn btn-danger">Delete Account</button>
                         </form>
 
-                    <?php }
+                        <?php
+                    }
 
                     ?>
 
