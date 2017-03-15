@@ -43,7 +43,7 @@ if (isset($_GET['action']) && $_GET['action'] == "logout") {
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="userhome.php">জীবনতরী</a>
+                <a class="navbar-brand" href="userhome.php?page=1">জীবনতরী</a>
             </div>
             <ul class="nav navbar-nav navbar-right">
 
