@@ -29,9 +29,11 @@ $searchBlood = $_GET['search'];
     <div class="panel-body">
         <?php
 
-        $msg = "<div class='alert alert-success'><strong>Available Doner List</strong></div>";
+        $msg = "<div class='alert alert-success'><strong>Available Donor List</strong></div>";
         echo $msg;
-        $msg = "<div class='alert alert-danger'><strong>Non available Doner List</strong></div>";
+        $msg = "<div class='alert alert-danger'><strong>Unavailable Donor List</strong></div>";
+        echo $msg;
+        $msg = "<div class='alert alert-warning'><strong>Unknown</strong></div>";
         echo $msg;
         ?>
 
@@ -51,8 +53,11 @@ $searchBlood = $_GET['search'];
                 $i = 1;
                 foreach ($usrSearch as $sdata) {
                     $date1 = new DateTime("$sdata[last_donated]");
+                    //echo $date1->format('d-m-Y')."<br>";
                     $date2 = new DateTime();
-                    $diff = $date1->diff($date2)->days;
+                    $diff = (string)$date1->diff($date2)->days;
+                    //echo $diff."<br>";
+                    //echo $sdata['id']."<br>";
                     if ($diff > 119) {
                         ?>
                         <tr class="alert alert-success">
@@ -63,7 +68,7 @@ $searchBlood = $_GET['search'];
                         <td><a class="btn btn-info"
                                href="profile.php?id=<?php echo $sdata['id']; ?>">View</a>
                         </td>
-                    <?php } else { ?>
+                    <?php } else if($diff>0 && $diff<119) { ?>
                         </tr>
                         <tr class="alert alert-danger">
                         <td><?php echo $i++; ?> </td>
@@ -73,7 +78,17 @@ $searchBlood = $_GET['search'];
                         <td><a class="btn btn-info"
                                href="profile.php?id=<?php echo $sdata['id']; ?>">View</a>
                         </td>
-                    <?php } ?>
+                    <?php } else  { ?>
+                        </tr>
+                        <tr class="alert alert-warning">
+                        <td><?php echo $i++; ?> </td>
+                        <td><?php echo $sdata['name']; ?></td>
+                        <td><?php //echo "unknown"; ?></td>
+                        <!--<td><?php echo $sdata['email']; ?></td>-->
+                        <td><a class="btn btn-info"
+                               href="profile.php?id=<?php echo $sdata['id']; ?>">View</a>
+                        </td>
+                        <?php } ?>
                     <?php
                 }
             } else {

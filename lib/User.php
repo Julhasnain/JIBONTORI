@@ -86,7 +86,8 @@ class User
 
 
         $password = md5($password);
-
+        if($blood_group != "Unknown")
+            $blood_group = strtoupper($blood_group);
 
         $sql = "INSERT INTO tbl_user(name,username,email,password,blood_group,last_donated,age,contact) VALUES(:name,:username,:email,:password,:blood_group,:last_donated,:age,:contact)";
         $query = $this->db->pdo->prepare($sql);
@@ -94,7 +95,7 @@ class User
         $query->bindValue(':username', $username);
         $query->bindValue(':email', $email);
         $query->bindValue(':password', $password);
-        $query->bindValue(':blood_group', strtoupper($blood_group));
+        $query->bindValue(':blood_group', $blood_group);
         $query->bindValue(':last_donated', $donated);
         $query->bindValue(':age', " ");
         $query->bindValue(':contact', " ");

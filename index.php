@@ -62,7 +62,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
         </div>
 
 
-
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
@@ -80,7 +79,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
                         <div class="form-group">
                             <input id="email" type="email" class="form-control" name="email" placeholder="Email">
                         </div>
-                     </li>
+                    </li>
                     <li>
                         <div class="form-group">
                             <input id="password" type="password" class="form-control" name="password"
@@ -89,10 +88,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
                     </li>
 
 
-                    <li><button type="submit" name="login" class="btn btn-primary">Login</button></li>
-                    <li><button type="submit" name="register" class="btn btn-danger">Register</button> </li>
+                    <li>
+                        <button type="submit" name="login" class="btn btn-primary">Login</button>
+                    </li>
+                    <li>
+                        <button type="submit" name="register" class="btn btn-danger">Register</button>
+                    </li>
 
-                   <!--<li><button class="btn btn-danger"><a href="register.php"></a>Register</button></li>-->
+                    <!--<li><button class="btn btn-danger"><a href="register.php"></a>Register</button></li>-->
                 </ul>
             </form>
         </div><!-- /.navbar-collapse -->
@@ -109,9 +112,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
         <!-- Loading Screen -->
         <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
             <div
-                style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+                    style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
             <div
-                style="position:absolute;display:block;background:url('assets/img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+                    style="position:absolute;display:block;background:url('assets/img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
         </div>
 
         <div data-u="slides"
@@ -153,24 +156,21 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
             <div class="col-md-4">
                 <div class="about-text">
                     <h4>Who We Are</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam.
-                        Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam
-                        commodo nibh.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam.
-                        Sed commodo nibh ante facilisis bibendum. </p>
+                    <p>The জীবনতরী System is a platform for online blood donor community. It helps the user find
+                        available donors within requested blood group. It can help save a precious life..</p>
+                    <p>The জীবনতরী System is a platform for online blood donor community. It helps the user find
+                        available donors within requested blood group. It can help save a precious life. </p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="about-text">
                     <h4>What We Do</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam.
-                        Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare
-                        diam.</p>
+                    <p>The জীবনতরী System is a platform for online blood donor community. It helps the user find
+                        available donors within requested blood group. It can help save a precious life.</p>
                     <ul>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Consectetur adipiscing commodo</li>
-                        <li>Duis sed dapibus leo sed dapibus</li>
-                        <li>Sed commodo nibh ante bibendum</li>
+                        <li>Make people aware of blood donation</li>
+                        <li>create a friendly platform for blood donor community</li>
+                        <li>Inspire people about blood donation</li>
                     </ul>
                 </div>
             </div>
@@ -331,16 +331,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
                     </div>
                     <div style="font-size: 15px;">
                         <?php
-                            include("ContactMail.php");
-                            if(isset($_POST['submit'])){
+                        include("ContactMail.php");
+                        if (isset($_POST['submit'])) {
                             echo $message;
-                            }
+                        }
                         ?>
 
                     </div>
 
                     <button type="submit" name="submit" class="btn btn-default">Send Message</button>
-
 
 
                 </form>
@@ -361,7 +360,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
 <!--Footer Section-->
 <div class="footer">
     <div class=" container text-center">
-        <p>Copyright &copy; 2017 জীবনতরী  |  Designed and Developed By Team জীবনতরী </p>
+        <p>Copyright &copy; 2017 জীবনতরী | Designed and Developed By Team জীবনতরী </p>
     </div>
 </div>
 
@@ -371,7 +370,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
 <script src="assets/js/plugins.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/main.js"></script>
-
 
 
 <!--Slider JS-->
