@@ -104,7 +104,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['delete'])) {
                         <label for="Blood_Group">Blood Group</label>
                         <?php
                         $sesId = Session::get("id");
-                        if ($userdata->blood_group == "Unknown" && $sesId == $userid || $adminValue==9) {
+                        if ($userdata->blood_group == "Unknown" && $sesId == $userid || $userdata->blood_group == "Unknown" && $adminValue==9) {
                             //if($userdata->blood_group == 'X')
                             //echo "yoo";
                             ?>
