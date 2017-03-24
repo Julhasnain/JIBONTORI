@@ -18,13 +18,14 @@ class User
         $this->db = new Database();
     }
 
+
     public function userRegistration($data)
     {
         $name = $data['name'];
         $username = $data["username"];
         $email = $data['email'];
-        $password = ($data['password']);
-        $blood_group = ($data['blood_group']);
+        $password = $data['password'];
+        $blood_group = $data['blood_group'];
         $donated = $data['date'];
         //$date1 = new DateTime("$donated");
         //echo $date1->format("d-m-Y");
@@ -38,7 +39,7 @@ class User
 
         $chk_username = $this->usernameCheck($username);
 
-        if ($name == "" || $username == "" || $email == "" || $password == "" || $blood_group == "" || $donated == "") {
+        if ($name == "" || $username == "" || $email == "" || $password == "" || $blood_group == "") {
             $msg = "<div class='alert alert-danger'><strong>Error! </strong>Field must not be empty</div>";
             return $msg;
         }
@@ -54,7 +55,7 @@ class User
             return $msg;
         }
         if (filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
-            $msg = "<div class='alert alert-danger'><strong>Error! </strong>Email address is not valid</div>";
+            $msg = "<div class='alert alert-danger'><strong>Error! </strong>Email address not valid</div>";
             return $msg;
         }
         if ($chk_email == true) {
@@ -66,27 +67,28 @@ class User
             return $msg;
         }
 
-         if($donated[2] != '-' || $donated[5] != '-')
-        {
-            $msg = "<div class='alert alert-danger'><strong>Error! </strong>Date format not valid</div>";
-            return $msg;
+        if ($donated != "") {
+            if ($donated[2] != '-' || $donated[5] != '-') {
+                $msg = "<div class='alert alert-danger'><strong>Error! </strong>Date format not valid</div>";
+                return $msg;
+            }
+
+            list($dd, $mm, $yyyy) = explode('-', $donated);
+            if (!checkdate($dd, $mm, $yyyy)) {
+                $msg = "<div class='alert alert-danger'><strong>Error! </strong>Date format not valid</div>";
+                return $msg;
+            }
+            if (strlen($dd) != 2 || strlen($mm) != 2 || strlen($yyyy) != 4) {
+                $msg = "<div class='alert alert-danger'><strong>Error! </strong>Date format not valid</div>";
+                return $msg;
+            }
         }
 
-        list($dd,$mm,$yyyy) = explode('-',$donated);
-        if (!checkdate($dd,$mm,$yyyy)) {
-            $msg = "<div class='alert alert-danger'><strong>Error! </strong>Date format not valid</div>";
-            return $msg;
-        }
-        if(strlen($dd) != 2 || strlen($mm) != 2 || strlen($yyyy) != 4)
-        {
-            $msg = "<div class='alert alert-danger'><strong>Error! </strong>Date format not valid</div>";
-            return $msg;
-        }
 
         $password = md5($password);
 
 
-        $sql = "INSERT INTO tbl_user(name,username,email,password,blood_group,last_donated) VALUES(:name,:username,:email,:password,:blood_group,:last_donated)";
+        $sql = "INSERT INTO tbl_user(name,username,email,password,blood_group,last_donated,age,contact) VALUES(:name,:username,:email,:password,:blood_group,:last_donated,:age,:contact)";
         $query = $this->db->pdo->prepare($sql);
         $query->bindValue(':name', $name);
         $query->bindValue(':username', $username);
@@ -94,19 +96,19 @@ class User
         $query->bindValue(':password', $password);
         $query->bindValue(':blood_group', strtoupper($blood_group));
         $query->bindValue(':last_donated', $donated);
-        //$query->bindValue(':days', $diff);
+        $query->bindValue(':age', " ");
+        $query->bindValue(':contact', " ");
         $result = $query->execute();
 
+
         if ($result) {
-            //todo last inserted user id
             $sql1 = "INSERT INTO user_info(username,pro_name,pro_value) VALUES(:username,:pro_name,:pro_value)";
             $query1 = $this->db->pdo->prepare($sql1);
             $query1->bindValue(':username', $username);
             $query1->bindValue(':pro_name', "user");
             $query1->bindValue(':pro_value', "0");
             $query1->execute();
-
-           $msg = "<div class='alert alert-success'><strong>Congratulations! </strong>You have been registered successfully.Now Login :)</div>";
+            $msg = "<div class='alert alert-success'><strong>Congratulations! </strong>You have been registered successfully.Now Login :)</div>";
             return $msg;
         } else {
             $msg = "<div class='alert alert-danger'><strong>Sorry! </strong>There is a problem</div>";
@@ -126,6 +128,8 @@ class User
             return false;
     }
 
+
+    //check if a mail already exists or not
     public function emailCheck($email)
     {
         $sql = "SELECT email from tbl_user WHERE email = :email";
@@ -138,6 +142,7 @@ class User
             return false;
     }
 
+
     public function getLoginUser($email, $password)
     {
         $sql = "SELECT * from tbl_user WHERE email = :email AND password = :password LIMIT 1";
@@ -148,6 +153,7 @@ class User
         $result = $query->fetch(PDO::FETCH_OBJ);
         return $result;
     }
+
 
     public function userLogin($data)
     {
@@ -174,15 +180,15 @@ class User
         if ($result) {
             Session::init();
             Session::set("login", true);
-            Session::set("register",true);
+            Session::set("register", true);
             Session::set("id", $result->id);
             Session::set("name", $result->name);
             Session::set("username", $result->username);
             Session::set("loginmsg", "<div class='alert alert-success'>Welcome! <strong>$result->name</strong></div>");
+
             header("Location: userhome.php?page=1");
         } else {
             $msg = "<div class='text-danger' style=\"white-space:pre\"><h4>Invalid Password!!                          </h4></div>";
-
             return $msg;
         }
     }
@@ -218,6 +224,17 @@ class User
         return $result;
     }
 
+    public function getUsername($id)
+    {
+        $sql = "SELECT username from tbl_user WHERE id = :id LIMIT 1";
+        $query = $this->db->pdo->prepare($sql);
+        $query->bindValue(':id', $id);
+        $query->execute();
+        $result = (string)$query->fetch(PDO::FETCH_OBJ);
+        var_dump($result);
+        //return $result;
+    }
+
 
     function updateUserData($id, $data)
     {
@@ -225,21 +242,10 @@ class User
         $username = $data["username"];
         $email = $data['email'];
         $blood = $data['blood_group'];
-
         $lastDonate = $data['lastDonation1'];
-        //echo $lastDonate;
         $age = $data['age'];
-        if($age == "")
-            $age = 0;
         $contact = $data['contact'];
-        //$date1 = new DateTime("$lastDonate");
-        //echo $date1->format("d-m-Y");
-        //echo $donated;
-        //$date2 = new DateTime();
-        //$diff = $date1->diff($date2)->days;
-        // echo $diff;
 
-        // $chk_username = $this->usernameCheck($username);
 
         if ($name == "") {
             $msg = "<div class='alert alert-danger'><strong>Error! </strong>Name must not be empty</div>";
@@ -249,10 +255,16 @@ class User
             $msg = "<div class='alert alert-danger'><strong>Error! </strong>Blood Group must not be empty</div>";
             return $msg;
         }
-        if ($contact == "") {
+
+        /*if ($age == "") {
+            $msg = "<div class='alert alert-danger'><strong>Error! </strong>Age must not be empty</div>";
+            return $msg;
+        }*/
+
+        /*if ($contact == "") {
             $msg = "<div class='alert alert-danger'><strong>Error! </strong>Contact must not be empty</div>";
             return $msg;
-        }
+        }*/
 
         if (strlen($username) < 3) {
             $msg = "<div class='alert alert-danger'><strong>Error! </strong>Username too short</div>";
@@ -266,27 +278,24 @@ class User
             return $msg;
         }
 
-        if($lastDonate[2] != '-' || $lastDonate[5] != '-')
-        {
-            $msg = "<div class='alert alert-danger'><strong>Error! </strong>Date format not valid</div>";
-            return $msg;
+        if ($lastDonate != "") {
+            if ($lastDonate[2] != '-' || $lastDonate[5] != '-') {
+                $msg = "<div class='alert alert-danger'><strong>Error! </strong>Date format not valid. Please enter dd-mm-yyyy format</div>";
+                return $msg;
+            }
+
+
+            list($dd, $mm, $yyyy) = explode('-', $lastDonate);
+            if (!checkdate($mm, $dd, $yyyy)) {
+                $msg = "<div class='alert alert-danger'><strong>Error! </strong>Date format not valid. Please enter dd-mm-yyyy format</div>";
+                return $msg;
+            }
+
+            if (strlen($dd) != 2 || strlen($mm) != 2 || strlen($yyyy) != 4) {
+                $msg = "<div class='alert alert-danger'><strong>Error! </strong>Date format not valid. Please enter dd-mm-yyyy format</div>";
+                return $msg;
+            }
         }
-
-
-        list($dd,$mm,$yyyy) = explode('-',$lastDonate);
-        if (!checkdate($mm,$dd,$yyyy)) {
-            $msg = "<div class='alert alert-danger'><strong>Error! </strong>Date format not valid</div>";
-            return $msg;
-        }
-        //echo $dd."-".$mm."-".$yyyy."<br>";
-        //echo strlen($dd);
-        if(strlen($dd) != 2 || strlen($mm) != 2 || strlen($yyyy) != 4)
-        {
-            $msg = "<div class='alert alert-danger'><strong>Error! </strong>Date format not valid</div>";
-            return $msg;
-        }
-
-
 
 
         /* if ($chk_username == true) {
@@ -303,7 +312,7 @@ class User
                 age = :age,
                 contact = :contact
 
-                WHERE id = :id";
+                WHERE id=:id";
 
         $query = $this->db->pdo->prepare($sql);
         $query->bindValue(':name', $name);
@@ -401,6 +410,16 @@ class User
         return $result;
     }
 
+    public function deleteValue($username, $data)
+    {
+        $username = $data['username'];
+        $sql = "DELETE from tbl_user WHERE username = :username";
+        $query = $this->db->pdo->prepare($sql);
+        $query->bindValue(':username', $username);
+        $result = $query->execute();
+        return $result;
+    }
+
     public function totalRows()
     {
         $nRows = $this->db->pdo->query('select count(*) from tbl_user')->fetchColumn();
@@ -417,8 +436,6 @@ class User
         //var_dump($result);
         return $result;
     }
-
-
 
 
 }

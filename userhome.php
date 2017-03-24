@@ -33,9 +33,7 @@ $start = ($page > 1) ? ($page * $perPage) - $perPage : 0;
 
 <?php
 $loginmsg = Session::get("loginmsg");
-if (isset($loginmsg)) {
     echo $loginmsg;
-}
 Session::set("loginmsg", null);
 ?>
 

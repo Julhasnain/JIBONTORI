@@ -1,5 +1,6 @@
 <?php
-$filepath = realpath(dirname(__FILE__));
+$filepath = dirname(__FILE__);
+//echo $filepath;
 include_once $filepath . '/../lib/Session.php';
 Session::init();
 date_default_timezone_set('Asia/Dhaka');
@@ -78,7 +79,6 @@ if (isset($_GET['action']) && $_GET['action'] == "logout") {
                     <li><a href="userhome.php?page=1"><span class="glyphicon glyphicon-home"></span> Home</a></li>
                     <li><a href="profile.php?id=<?php echo $id; ?>"><span class="glyphicon glyphicon-user"></span>
                             Profile</a></li>
-
 
                     <li><a href="?action=logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
                     <?php

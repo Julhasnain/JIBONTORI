@@ -5,11 +5,19 @@ Session::checkSession();
 ?>
 
 <?php
+$user = new User();
+$sesname = Session::get("username");
+echo $sesname;
+$admin = $user->adminCheck($sesname);
+$adminValue = $admin->pro_value;
+echo $adminValue;
+
 if (isset($_GET['id'])) {
     $userid = (int)$_GET['id'];
     $sesId = Session::get("id");
-    if ($sesId != $userid) {
-        header("Location: index.php");
+
+    if ($sesId != $userid && $adminValue!=9) {
+        header("Location: changepass.php?id=$sesId");
     }
 }
 $user = new User();

@@ -8,11 +8,14 @@ Session::checkSession();
 
 
 <?php
+
 if (isset($_GET['id'])) {
     $userid = (int)$_GET['id'];
+    echo $userid;
 }
 
 $user = new User();
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
     $updateusr = $user->updateUserData($userid, $_POST);
 }
@@ -21,23 +24,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
 <?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['delete'])) {
     $deleteUser = $user->delete($userid, $_POST);
-    //echo $deleteUser;
-    // echo $userid;
-    //Session::destroy();
+    //$deleteValue = $user->deleteValue($username, $_POST);
     header("Location: userhome.php?page=1");
 }
 
 ?>
 
-<?php
-
-?>
 
 <div class="panel panel-success">
     <div class="panel-heading">
         <h2>User Profile<span class="pull-right"><a class="btn btn-primary"
                                                     href="javascript:window.history.back()">Back</a></span></h2>
     </div>
+
 
     <div class="panel-body">
         <div style="max-width: 600px; margin: 0 auto">
@@ -50,13 +49,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['delete'])) {
             <?php
             $sesname = Session::get("username");
             $admin = $user->adminCheck($sesname);
-            //if ($admin) {
             $adminValue = $admin->pro_value;
-            // echo $adminValue;
-            // }
             $userdata = $user->getUserById($userid);
+
             {
                 ?>
+
+
                 <form action="" method="post">
                     <div class="form-group">
                         <label for="name">Full Name</label>
@@ -136,12 +135,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['delete'])) {
                         if ($sesId == $userid || $adminValue == 9) {
                             ?>
                             <input type="text" id="lastDonation1" name="lastDonation1" class="form-control"
-                                   value="<?php echo $userdata->last_donated; ?>" placeholder="dd-mm-yyyy">
+                                   placeholder="dd-mm-yyyy"
+                                   value="<?php echo $userdata->last_donated; ?>">
                         <?php } else { ?>
                             <input type="text" id="lastDonation1" name="lastDonation1" class="form-control"
                                    value="<?php echo $userdata->last_donated; ?>" readonly>
                         <?php } ?>
                     </div>
+
 
                     <div class="form-group">
                         <label for="Last Donation2">Last Donation(Days ago)</label>
@@ -163,13 +164,20 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['delete'])) {
                             ?>
                             <input type="text" id="lastDonation2" name="lastDonation2" class="form-control"
                                    value="<?php
+                                   if ($userdata->last_donated != "")
+                                       echo $diff;
+                                   else
+                                       echo "For day calculation please enter a valid date";
 
-                                   echo $diff; ?>" readonly>
+                                   ?>" readonly>
                         <?php } else { ?>
                             <input type="text" id="lastDonation2" name="lastDonation2" class="form-control"
                                    value="<?php
 
-                                   echo $diff; ?>" readonly>
+                                   if ($userdata->last_donated != "")
+                                       echo $diff;
+                                   else
+                                       echo "For day calculation please enter a valid date"; ?>" readonly>
                         <?php }
                         ?>
                     </div>
@@ -205,17 +213,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['delete'])) {
 
                     <?php
                     $sesId = Session::get("id");
-                    /*$sesname =  Session::get("username");
-                    if($sesname == $usrname)
-                        echo "pkpk";
-                    else
-                        echo "ckck";*/
+                    if ($sesId == $userid || $adminValue == 9) { ?>
 
-                    if ($sesId == $userid || $adminValue == 9) {
-                        ?>
                         <button type="submit" name="update" class="btn btn-info">Update</button>
                         <a class="btn btn-success" href="changepass.php?id=<?php echo $userid; ?>">Change Password</a>
+
                     <?php } ?>
+
                     <?php
                     if ($adminValue == 9) { ?>
                         <form action="" method="post">

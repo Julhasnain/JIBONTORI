@@ -338,6 +338,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
                         ?>
 
                     </div>
+
                     <button type="submit" name="submit" class="btn btn-default">Send Message</button>
 
 

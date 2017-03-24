@@ -16,11 +16,11 @@ $searchBlood = $_GET['search'];
     <div class="panel-heading">
         <h2><?php echo strtoupper($searchBlood); ?> Doner List<!--<span class="pull-right">Welcome! <strong>
                     <?php
-                    /*$name = Session::get("name");
-                    if (isset($name)) {
-                        echo $name;
-                    }
-                    */?>
+            /*$name = Session::get("name");
+            if (isset($name)) {
+                echo $name;
+            }
+            */ ?>
 
                 </strong></span></h2>-->
     </div>
@@ -28,6 +28,7 @@ $searchBlood = $_GET['search'];
 
     <div class="panel-body">
         <?php
+
         $msg = "<div class='alert alert-success'><strong>Available Doner List</strong></div>";
         echo $msg;
         $msg = "<div class='alert alert-danger'><strong>Non available Doner List</strong></div>";
