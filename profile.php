@@ -30,9 +30,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['delete'])) {
 ?>
 
 <?php
-$msg = Session::get("msg");
-echo $msg;
-Session::set("msg", null);
+$sesId = Session::get("id");
+if ($sesId == $userid) {
+    $msg = Session::get("msg");
+    echo $msg;
+    Session::set("msg", null);
+
+}
 ?>
 
 
@@ -183,13 +187,14 @@ Session::set("msg", null);
                                    ?>" readonly>
                         <?php } else { ?>
                             <input type="text" id="lastDonation2" name="lastDonation2" class="form-control"
-                                   value="<?php
+                            value="<?php
 
-                                   if ($userdata->last_donated != "")
-                                       echo $diff;
-                                   else
-                                      // echo "For day calculation please enter a valid date"; ?>" readonly>
-                        <?php }
+                            if ($userdata->last_donated != "")
+                                echo $diff;
+                            else
+                                // echo "For day calculation please enter a valid date";
+                                ?>" readonly>
+                            <?php }
                         ?>
                     </div>
 
