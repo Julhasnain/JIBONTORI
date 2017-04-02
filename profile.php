@@ -29,6 +29,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['delete'])) {
 
 ?>
 
+<?php
+$msg = Session::get("msg");
+echo $msg;
+Session::set("msg", null);
+?>
+
 
 <div class="panel panel-success">
     <div class="panel-heading">
@@ -50,10 +56,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['delete'])) {
             $admin = $user->adminCheck($sesname);
             $adminValue = $admin->pro_value;
             $userdata = $user->getUserById($userid);
-
             {
                 ?>
-
 
                 <form action="" method="post">
                     <div class="form-group">
@@ -104,7 +108,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['delete'])) {
                         <label for="Blood_Group">Blood Group</label>
                         <?php
                         $sesId = Session::get("id");
-                        if ($userdata->blood_group == "Unknown" && $sesId == $userid || $userdata->blood_group == "Unknown" && $adminValue==9) {
+                        if ($userdata->blood_group == "Unknown" && $sesId == $userid || $userdata->blood_group == "Unknown" && $adminValue == 9) {
                             //if($userdata->blood_group == 'X')
                             //echo "yoo";
                             ?>
@@ -135,7 +139,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['delete'])) {
                             ?>
                             <input type="text" id="lastDonation1" name="lastDonation1" class="form-control"
                                    placeholder="dd-mm-yyyy"
-
                                    value="<?php
                                    echo $userdata->last_donated;
                                    ?>">
@@ -185,7 +188,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['delete'])) {
                                    if ($userdata->last_donated != "")
                                        echo $diff;
                                    else
-                                       echo "For day calculation please enter a valid date"; ?>" readonly>
+                                      // echo "For day calculation please enter a valid date"; ?>" readonly>
                         <?php }
                         ?>
                     </div>

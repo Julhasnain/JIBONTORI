@@ -86,7 +86,7 @@ class User
 
 
         $password = md5($password);
-        if($blood_group != "Unknown")
+        if ($blood_group != "Unknown")
             $blood_group = strtoupper($blood_group);
 
         $sql = "INSERT INTO tbl_user(name,username,email,password,blood_group,last_donated,age,contact) VALUES(:name,:username,:email,:password,:blood_group,:last_donated,:age,:contact)";
@@ -186,7 +186,7 @@ class User
             Session::set("name", $result->name);
             Session::set("username", $result->username);
             Session::set("loginmsg", "<div class='alert alert-success'>Welcome! <strong>$result->name</strong></div>");
-
+            Session::set("msg", "<div class='alert alert-warning' style=\"white-space:pre\">                                                                                                                <strong>Please fill up all the information</strong></div>");
             header("Location: userhome.php?page=1");
         } else {
             $msg = "<div class='text-danger' style=\"white-space:pre\"><h4>Invalid Password!!                          </h4></div>";

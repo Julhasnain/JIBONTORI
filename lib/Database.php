@@ -5,7 +5,7 @@ class Database
     private $hostdb = "localhost";
     private $userdb = "root";
     private $passdb = "";
-    private $namedb = "db_lr";
+    private $namedb = "jibontori";
     public $pdo;
 
     public function __construct()
