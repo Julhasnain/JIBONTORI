@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="008e4381-4e4a-463d-9edb-0b8b770a73a6" name="Default" comment="Pico project Finished">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Jibontori.iml" afterPath="$PROJECT_DIR$/.idea/Jibontori.iml" />
+    <list default="true" id="008e4381-4e4a-463d-9edb-0b8b770a73a6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Database.php" afterPath="$PROJECT_DIR$/lib/Database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/User.php" afterPath="$PROJECT_DIR$/lib/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profile.php" afterPath="$PROJECT_DIR$/profile.php" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -379,7 +375,7 @@
       <workItem from="1490427278191" duration="1231000" />
       <workItem from="1490873363883" duration="457000" />
       <workItem from="1491066920813" duration="1342000" />
-      <workItem from="1491108859924" duration="3648000" />
+      <workItem from="1491108859924" duration="3734000" />
     </task>
     <task id="LOCAL-00001" summary="session">
       <created>1487255213878</created>
@@ -458,11 +454,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490365346111</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="a msg in profile&#10;database name changed">
+      <created>1491113860970</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1491113860970</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62959000" />
+    <option name="totallyTimeSpent" value="63045000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -520,7 +523,8 @@
     <MESSAGE value="Blood group change for unknown" />
     <MESSAGE value="date format (kisu baki ase ekhono) -_-" />
     <MESSAGE value="Pico project Finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pico project Finished" />
+    <MESSAGE value="a msg in profile&#10;database name changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="a msg in profile&#10;database name changed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
