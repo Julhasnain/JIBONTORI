@@ -35,6 +35,17 @@ class User
 
         /*else
            $password = md5($password);*/
+
+        $usernameAvailability = $this->db->pdo->prepare("SELECT username from tbl_user WHERE username =:username");
+        $usernameAvailability->bindValue(':username', $username);
+        $result1 = $usernameAvailability->execute();
+
+        if ($result1->rowCount() > 0) {
+            echo "<span style='color: red'>Sorry username already taken</span>";
+        } else {
+            echo "<span style='color: lightseagreen'>username available</span>";
+        }
+
         $chk_email = $this->emailCheck($email);
 
         $chk_username = $this->usernameCheck($username);
@@ -124,9 +135,13 @@ class User
         $query->bindValue(':username', $username);
         $query->execute();
         if ($query->rowCount() > 0) {
+            echo "<span style='color: red'>Sorry username already taken</span>";
             return true;
-        } else
+        } else {
+            echo "<span style='color: lightseagreen'>username available</span>";
             return false;
+        }
+
     }
 
 
