@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Rakib
- * Date: 12-Jan-17
- * Time: 5:52 PM
- */
 
 include_once "Session.php";
 include "Database.php";
